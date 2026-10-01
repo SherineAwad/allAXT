@@ -25,6 +25,15 @@ def main():
     # Plot
     os.makedirs('figures', exist_ok=True)
     sc.pl.umap(adata, color='sample', save=f'_{args.prefix}_harmony_sample.png')
+    
+
+    # Each sample separately
+    for s in adata.obs["sample"].unique():
+        sc.pl.umap(
+            adata[adata.obs["sample"] == s],
+            color='sample',
+            title=f"Sample: {s}",
+            save=f'_{args.prefix}_harmony_{s}.png')
 
     # Save
     adata.write(args.output, compression='gzip')
