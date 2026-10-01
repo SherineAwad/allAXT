@@ -46,9 +46,9 @@ and now per dataset:
 
 
 
-#### Scale, normalise, and UMAP
+### Scale, normalise, and UMAP
 
-![](figures/umap_allAXT_Regen_14_DPA.png?v=1)
+![](figures/umap_allAXT_umap.png?v=1) 
 
 ##### Per sample 
 <img src="figures/umap_allAXT_Uninjured1.png?v=1" width="48%"> <img src="figures/umap_allAXT_Uninjured2.png?v=1" width="48%">
@@ -57,4 +57,9 @@ and now per dataset:
 
 <img src="figures/umap_allAXT_nonReg.png?v=1" width="48%"> <img src="figures/umap_allAXT_Reg.png?v=1" width="48%">
 
-<img src="figures/umap_allAXT_Reg_4wpa.png?v=1" width="48%"> <img src="figures/umap_allAXT_umap.png?v=1" width="48%">
+<img src="figures/umap_allAXT_Reg_4wpa.png?v=1" width="48%"> <img src="figures/umap_allAXT_Regen_14_DPA.png?v=1" width="48%">
+
+
+### Now run harmony to reduce batch effect 
+ 
+![](figures/umap_allAXT_harmony_sample.png?v=1)
