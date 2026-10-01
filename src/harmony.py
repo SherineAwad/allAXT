@@ -15,7 +15,7 @@ def main():
     print(f"Loaded: {adata.n_obs} cells × {adata.n_vars} genes")
 
     # Run Harmony – input must be (cells × PCs)
-    harmony_out = hm.run_harmony(adata.obsm['X_pca'], adata.obs, "sample")
+    harmony_out = hm.run_harmony(adata.obsm['X_pca'], adata.obs, "experiment")
     adata.obsm['X_pca_harmony'] = harmony_out.Z_corr  # shape (n_cells, n_pcs)
 
     # UMAP using Harmony-corrected PCs
