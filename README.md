@@ -272,6 +272,8 @@ marker_genes = {
 
 ## Preliminary annotations 
 
+- Cluster 30 could be Macropahge? 
+
 ![](figures/umap_allAXT_celltype.png?v=1)
 
 ![](figures/umap_allAXT_celltypeON.png?v=1)
