@@ -268,3 +268,10 @@ marker_genes = {
 <img src="figures/umap_allAXT_Cd19.png?v=3" width="32%"> <img src="figures/umap_allAXT_Esam.png?v=3" width="32%"> <img src="figures/umap_allAXT_Rgs5.png?v=3" width="32%">
 
 <img src="figures/umap_allAXT_Prrx1.png?v=3" width="32%">
+
+
+## Preliminary annotations 
+
+![](figures/umap_allAXT_celltype.png?v=1)
+
+![](figures/umap_allAXT_celltypeON.png?v=1)
