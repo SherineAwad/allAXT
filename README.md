@@ -272,8 +272,15 @@ marker_genes = {
 
 ## Preliminary annotations 
 
-- Cluster 30 could be Macropahge? 
+- Cluster 36 could be Macropahge? 
 
-![](figures/umap_allAXT_celltype.png?v=1)
+- Fibroblast/Osteoblast/Osteclast markers are higly expressed in the same clusters?
 
-![](figures/umap_allAXT_celltypeON.png?v=1)
+- Pericyte and SMC are highly expressed in the same clusters? 
+
+- MSC and Schwann are highly expressed in the same clusters? 
+
+
+![](figures/umap_allAXT_celltype.png?v=2)
+
+![](figures/umap_allAXT_celltypeON.png?v=2)
