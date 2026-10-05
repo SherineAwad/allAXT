@@ -158,6 +158,11 @@ To assess whether clustering was associated with differences in cell quality, th
 
 
 
+#### Feature plots and dotplot
+
+![](figures/dotplot__allAXT_dotplot.png?v=1)
+
+
 <img src="figures/umap_allAXT_Matn1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Oscar.png?v=3" width="32%"> <img src="figures/umap_allAXT_Pi16.png?v=3" width="32%">
 
 <img src="figures/umap_allAXT_Epcam.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ngfr.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cdh5.png?v=3" width="32%">
