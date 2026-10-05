@@ -60,11 +60,11 @@ Cells identified as doublets using these criteria were excluded from the dataset
 
 The quality-controlled datasets were combined into a single dataset for joint downstream analysis. Each dataset was labelled with its corresponding experiment of origin so that cells could be tracked back to their source.
 
-Only genes shared across all datasets were retained, ensuring that the combined dataset contained a consistent set of features across experiments. Cell identifiers were also made unique during merging.
+All genes across all datasets were retained using an outer join (including dataset-specific genes such as *EGFP*), providing a comprehensive feature set for joint analysis.
 
 The resulting combined dataset was saved for downstream analysis.
 
-The merged dataset contained **92,169 cells** across three experiments:
+The merged dataset contained 92,169 cells across three experiments:
 
 | Experiment | Cells |
 |---|---:|
@@ -86,7 +86,6 @@ The cells were distributed across the following samples:
 | Uninjured1 | 2,610 |
 | Regen_14_DPA | 1,421 |
 
-Only genes shared across all three experiments were retained to provide a consistent feature set for joint analysis.
 
 ## Normalisation, feature selection and dimensionality reduction
 
