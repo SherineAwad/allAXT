@@ -275,3 +275,24 @@ marker_genes = {
 ![](figures/umap_allAXT_celltype.png?v=3)
 
 ![](figures/umap_allAXT_celltypeON.png?v=3)
+
+
+## Cell ratios 
+
+
+![](figures/allAXT_cell_ratios.png?v=1)
+
+| celltype | Non_Regen_14_DPA | Reg | Reg_4wpa | Regen_14_DPA | Uninjured1 | Uninjured2 | nonReg | nonReg_4wpa | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| B-Cells | 3 | 260 | 303 | 4 | 8 | 29 | 300 | 135 | 1042 |
+| Endothelial | 101 | 1576 | 1477 | 511 | 484 | 1676 | 1112 | 1450 | 8387 |
+| Keratinocyte | 803 | 697 | 1193 | 2 | 276 | 97 | 508 | 616 | 4192 |
+| Lymphatic_Endothelial | 62 | 149 | 239 | 2 | 35 | 7 | 231 | 370 | 1095 |
+| Macrophage/Osteoclast | 504 | 1931 | 4351 | 175 | 69 | 226 | 3858 | 6440 | 17554 |
+| Mast Cells | 19 | 31 | 45 | 1 | 0 | 1 | 125 | 75 | 297 |
+| Mesenchymal | 609 | 4300 | 4362 | 399 | 1126 | 1362 | 2741 | 6166 | 21065 |
+| Neutrophil | 1479 | 259 | 1018 | 3 | 0 | 12 | 513 | 492 | 3776 |
+| Osteosarcoma | 7 | 1247 | 6553 | 17 | 13 | 28 | 9009 | 6246 | 23120 |
+| Pericyte/MSC | 135 | 574 | 393 | 234 | 534 | 2031 | 581 | 545 | 5027 |
+| Schwann | 37 | 190 | 126 | 53 |
+
