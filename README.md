@@ -339,6 +339,88 @@ The top-ranked differential genes selected for display in the heatmap are chosen
 [Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/161OVUODgvmB0QYfQ0_YQVAhP0mV6h9t_UKBwZpWo8Ig/edit?usp=sharing)
 
 
+## Gene Set Enrichment Analysis (GSEA)
+
+This workflow identifies biological pathways associated with differences between two conditions by analysing a ranked list of genes.
+
+Unlike conventional pathway analysis, which focuses on individually significant differentially expressed genes, GSEA considers the overall distribution of genes across the ranked list. This helps identify biological processes showing coordinated changes, even when some individual genes are not significantly differentially expressed.
+
+##### Gene Ranking: Input, Processing and Output
+
+**Input:** The DGE CSV file contains a `gene` column and a `scores` column representing the signed Wilcoxon test statistics from the differential expression analysis.
+
+**Processing:** Genes are ranked by their signed Wilcoxon scores in descending order, from the highest positive score to the lowest negative score. Genes with duplicate scores receive a tiny random adjustment to avoid tied ranking values.
+
+**Output:** A ranked gene list containing each gene and its ranking score, ordered from highest to lowest. This ranked list is provided to GSEA for pathway enrichment analysis.
+
+- **Top of the list:** Genes with the highest positive Wilcoxon scores.
+- **Bottom of the list:** Genes with the most negative Wilcoxon scores.
+
+**Important:** The ranking uses the signed Wilcoxon `scores`, not log fold changes or adjusted p-values. The biological interpretation of positive and negative scores depends on the direction of the original differential expression comparison.
+
+##### Gene Set Resources
+
+The workflow supports four pathway resources:
+
+- **GO Biological Process:** Groups genes by biological processes, such as wound healing, cell migration and extracellular matrix organization.
+- **Reactome:** Curated pathways covering signalling, metabolism and other biological processes.
+- **KEGG:** Pathways covering cellular functions, signalling and metabolism.
+- **Hallmark:** Gene sets representing well-defined biological states and processes.
+
+Each resource provides a different perspective on the biological changes associated with the comparison.
+
+##### Enrichment Analysis
+
+GSEA evaluates whether genes belonging to a pathway tend to occur towards the top or bottom of the ranked gene list.
+
+The analysis uses **1,000 permutations** to assess enrichment. Pathways containing fewer than 15 or more than 500 genes are excluded.
+
+The main output measures are:
+
+- **Enrichment Score (ES):** Measures the strength and direction of the enrichment pattern.
+- **Normalized Enrichment Score (NES):** A normalized measure of enrichment that facilitates comparison across gene sets.
+- **FDR q-value:** Measures statistical significance while accounting for multiple pathway tests.
+- **Nominal p-value:** Measures statistical evidence for enrichment before multiple-testing correction.
+
+By default, pathways with an **FDR q-value below 0.05** are considered significant. This threshold can be changed using the `--qvalue` argument.
+
+##### Enrichment Directionality
+
+- **Positive NES:** Pathway genes tend to be concentrated towards the top of the ranked list.
+- **Negative NES:** Pathway genes tend to be concentrated towards the bottom of the ranked list.
+- **Larger absolute NES:** Indicates a stronger normalized enrichment signal.
+
+Positive NES does not automatically indicate pathway activation, nor does negative NES necessarily indicate pathway inhibition. Interpretation depends on the original comparison and the direction of the gene-ranking scores.
+
+##### Dotplot Interpretation
+
+The workflow generates a dotplot showing up to 30 significant pathways: up to 15 positively enriched and 15 negatively enriched pathways.
+
+- **X-axis (NES):** Shows the direction and strength of enrichment. Positive values appear on the right and negative values on the left.
+- **Dot size (Gene %):** Represents the percentage of pathway genes reported by GSEApy as contributing to the enrichment result. Larger dots indicate a higher percentage.
+- **Dot colour (−log10 FDR):** Represents statistical significance. Larger values correspond to smaller FDR q-values and stronger statistical evidence.
+
+The plot provides a visual summary of the top significant positively and negatively enriched pathways.
 
 
+##### Important Considerations
+
+- GSEA identifies coordinated patterns across pathway genes; it does not directly prove pathway activation or inhibition.
+- Results depend on the quality of gene identifiers, the selected pathway resource and the gene-ranking method.
+- A pathway can be significantly enriched even when some of its individual genes are not significantly differentially expressed.
+- Different pathways may share genes and therefore reflect related aspects of the same underlying biological response.
+
+###### Reg vs nonReg
+
+<img src="figures/Reg_nonReg_GO_dotplot.png?v=1" width="32%"> <img src="figures/Reg_nonReg_Reactome_dotplot.png?v=1" width="32%"> <img src="figures/Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%">
+
+- No KEGG results for Reg vs Non Reg 
+
+[Download here GO significant results for Reg vs nonReg](https://docs.google.com/spreadsheets/d/1pCvboT-XlQIKP9L5LIO4om97TlNJT59R410t6wtgAdo/edit?usp=sharing)
+
+###### Reg_4wp vs nonReg_4wpa
+
+<img src="figures/Reg_nonReg_4wpa_GO_dotplot.png?v=1" width="24%"> <img src="figures/Reg_nonReg_4wpa_Reactome_dotplot.png?v=1" width="24%"> <img src="figures/Reg_nonReg_4wpa_KEGG_dotplot.png?v=1" width="24%"> <img src="figures/Reg_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="24%">
+
+[Download here GO significant results for Reg_4wpa vs nonReg_4wpa](https://docs.google.com/spreadsheets/d/1APKFfFX5hKd14WvMBA8X4mCOtY1mLkyYJEY-48UX0nI/edit?usp=sharing) 
 
