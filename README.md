@@ -414,15 +414,14 @@ The plot provides a visual summary of the top significant positively and negativ
 
 ###### Reg vs nonReg
 
-<img src="figures/allAXT_Reg_nonReg_GO_dotplot.png?v=1" width="32%"> <img src="figures/allAXT_Reg_nonReg_Reactome_dotplot.png?v=1" width="32%"> <img src="figures/allAXT_Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%">
+<img src="figures/allAXT_Reg_nonReg_Hallmark_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_KEGG_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_GO_dotplot.png?v=2" width="32%">
 
-- No KEGG results for Reg vs Non Reg 
 
 [Download here GO significant results for Reg vs nonReg]() 
 
 ###### Reg_4wp vs nonReg_4wpa
 
-<img src="figures/allAXT_Reg_nonReg_4wpa_GO_dotplot.png?v=1" width="24%"> <img src="figures/allAXT_Reg_nonReg_4wpa_Reactome_dotplot.png?v=1" width="24%"> <img src="figures/allAXT_Reg_nonReg_4wpa_KEGG_dotplot.png?v=1" width="24%"> <img src="figures/allAXT_Reg_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="24%">
+<img src="figures/allAXT_Reg_nonReg_4wpa_Hallmark_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_4wpa_KEGG_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_4wpa_GO_dotplot.png?v=2" width="32%">
 
 [Download here GO significant results for Reg_4wpa vs nonReg_4wpa]()
 
