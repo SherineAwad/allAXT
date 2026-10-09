@@ -45,19 +45,24 @@ sc.tl.rank_genes_groups(
 
 df = sc.get.rank_genes_groups_df(adata, group=None)
 
-df = df[["names", "logfoldchanges", "pvals_adj"]].rename(
+# Save full DGE (all genes), including Wilcoxon scores
+full_df = df[["names", "logfoldchanges", "pvals_adj", "scores"]].rename(
     columns={"names": "gene"}
 )
 
-# Save full DGE (all genes)
-full_out = f"{args.group}_{args.reference}_dge.csv"
-df.to_csv(full_out, index=False)
+full_out = f"{args.prefix}_{args.group}_{args.reference}_dge.csv"
+full_df.to_csv(full_out, index=False)
+
+# Keep the original columns for all downstream steps
+df = df[["names", "logfoldchanges", "pvals_adj"]].rename(
+    columns={"names": "gene"}
+)
 
 # ----------------------------
 # FILTER SIGNIFICANT
 # ----------------------------
 sig = df[df["pvals_adj"] < args.pvalue].copy()
-sig_out = f"{args.group}_{args.reference}_dge_{args.pvalue}.csv"
+sig_out = f"{args.prefix}_{args.group}_{args.reference}_dge_{args.pvalue}.csv"
 sig.to_csv(sig_out, index=False)
 
 if sig.empty:
@@ -96,7 +101,7 @@ plt.xlabel("")
 
 plt.tight_layout()
 plt.savefig(
-    f"figures/{args.group}_{args.reference}_heatmap.png",
+    f"figures/{args.prefix}_{args.group}_{args.reference}_heatmap.png",
     dpi=300,
     bbox_inches="tight"
 )
