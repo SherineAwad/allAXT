@@ -332,14 +332,13 @@ The top-ranked differential genes selected for display in the heatmap are chosen
 
 
 ![](figures/allAXT_Reg_nonReg_heatmap.png?v=2)
-[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)]()
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1P8R2SlW0WfFefzCMQDBVJiHsWukur4wEeKEoTX8HywY/edit?usp=sharing) 
 
 ###### Reg_4wp vs nonReg_4wpa
 
 ![](figures/allAXT_Reg_4wpa_nonReg_4wpa_heatmap.png?v=2)
 
-[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)]()
-
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1SHzAelrU1VOKR0rY7K6E0ImkZu_XkFWXIf5s2ow-QVA/edit?usp=sharing) 
 
 ## Gene Set Enrichment Analysis (GSEA)
 
@@ -417,13 +416,13 @@ The plot provides a visual summary of the top significant positively and negativ
 <img src="figures/allAXT_Reg_nonReg_Hallmark_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_KEGG_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_GO_dotplot.png?v=2" width="32%">
 
 
-[Download here GO significant results for Reg vs nonReg]() 
+[Download here GO significant results for Reg vs nonReg](https://docs.google.com/spreadsheets/d/1m8PQRvFCXcpYLYmfVI5HPILcpKNnsHyWjoDSopihNC8/edit?usp=sharing)
 
 ###### Reg_4wp vs nonReg_4wpa
 
 <img src="figures/allAXT_Reg_nonReg_4wpa_Hallmark_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_4wpa_KEGG_dotplot.png?v=2" width="32%"> <img src="figures/allAXT_Reg_nonReg_4wpa_GO_dotplot.png?v=2" width="32%">
 
-[Download here GO significant results for Reg_4wpa vs nonReg_4wpa]()
+[Download here GO significant results for Reg_4wpa vs nonReg_4wpa](https://docs.google.com/spreadsheets/d/12M6VDP1tYVurXHbE1G-P8QmSgLltNymslRjaiR14gtI/edit?usp=sharing) 
 
 ### ON GOING 
 ## Zooming on Osteosarcoma 
