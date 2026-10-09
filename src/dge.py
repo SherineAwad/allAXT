@@ -64,15 +64,15 @@ if sig.empty:
     raise ValueError("No significant genes found")
 
 # ============================================================
-#  HEATMAP (TOP N BY P-VALUE + DIRECTION)
+# HEATMAP (TOP N BY LOGFC + DIRECTION)
 # ============================================================
 
 top_up_hm = sig[sig["logfoldchanges"] > 0].sort_values(
-    ["pvals_adj", "logfoldchanges"], ascending=[True, False]
+    "logfoldchanges", ascending=False
 ).head(args.N)
 
 top_down_hm = sig[sig["logfoldchanges"] < 0].sort_values(
-    ["pvals_adj", "logfoldchanges"], ascending=[True, True]
+    "logfoldchanges", ascending=True
 ).head(args.N)
 
 top_heat = pd.concat([top_up_hm, top_down_hm])
@@ -90,7 +90,7 @@ sns.heatmap(
     cbar_kws={"label": "logFC"}
 )
 
-plt.title(f"Global DE: Reg vs {args.reference}")
+plt.title(f"Global DE: {args.group} vs {args.reference}")
 plt.ylabel("Genes")
 plt.xlabel("")
 
@@ -106,4 +106,3 @@ plt.close()
 # SAVE H5AD (UNCHANGED)
 # ----------------------------
 adata.write_h5ad(args.output)
-

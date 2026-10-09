@@ -296,3 +296,52 @@ marker_genes = {
 | Pericyte/MSC | 135 | 574 | 393 | 234 | 534 | 2031 | 581 | 545 | 5027 |
 | Schwann | 37 | 190 | 126 | 53 |
 
+
+
+## Differential Gene Expression (DGE)
+
+This workflow performs pairwise differential gene expression analysis between a target condition (**Group**) and a baseline control (**Reference**). 
+
+To ensure the statistical comparison is strict and focused:
+1. The dataset is first subsetted to isolate only the cells belonging to the target **Group** and the baseline **Reference**, excluding all unrelated sample groups.
+2. Pairwise statistical testing is performed across the remaining cells using the **Wilcoxon rank-sum test** on normalized, log-transformed expression counts (`log1p`).
+
+
+#### Differential Expression Logic & Directionality
+The output fold changes reflect expression levels in the target group relative to the reference baseline:
+* **Positive Log Fold Change (logFC > 0):** Indicates genes that are **upregulated** in the target group compared to reference.
+* **Negative Log Fold Change (logFC < 0):** Indicates genes that are **downregulated** in the target group compared to reference.
+
+`
+**Filtered CSV Output:** Contains only genes that pass the significant p-value threshold.
+
+#### Heatmap Selection & Sorting Logic
+The top-ranked differential genes selected for display in the heatmap are chosen based on a two-step process prioritizing **biological effect size (magnitude of expression change)** among statistically validated genes:
+
+1. **Filtering by Statistical Significance:** Only genes meeting the adjusted p-value threshold ($p_{\text{adj}}$ < 0.05) are eligible for heatmap inclusion.
+2. **Directional Splitting:** Significant genes are split into two distinct groups:
+   * Upregulated genes (logFC > 0)
+   * Downregulated genes (logFC < 0)
+3. **LogFC Ranking:** 
+   * **Upregulated Block (Top):** Ranked strictly by **highest positive logFC** in descending order. The top N strongest upregulated genes are selected.
+   * **Downregulated Block (Bottom):** Ranked strictly by **most negative logFC** in ascending order. The top N strongest downregulated genes are selected.
+
+
+
+###### Reg vs nonReg
+
+![](figures/Reg_nonReg_heatmap.png?v=1)
+
+[Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/1omm4zeO5QSxG9W-GHoHs8MzxyBSJReD2iRRc1uunU2s/edit?usp=sharing)
+
+
+###### Reg_4wp vs nonReg_4wpa
+
+![](figures/Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
+
+[Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/161OVUODgvmB0QYfQ0_YQVAhP0mV6h9t_UKBwZpWo8Ig/edit?usp=sharing)
+
+
+
+
+
