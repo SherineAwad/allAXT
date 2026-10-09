@@ -330,13 +330,15 @@ The top-ranked differential genes selected for display in the heatmap are chosen
 
 ###### Reg vs nonReg
 
-![](figures/Reg_nonReg_heatmap.png?v=1)
-[Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/1omm4zeO5QSxG9W-GHoHs8MzxyBSJReD2iRRc1uunU2s/edit?usp=sharing)
+
+![](figures/allAXT_Reg_nonReg_heatmap.png?v=2)
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)]()
 
 ###### Reg_4wp vs nonReg_4wpa
 
-![](figures/Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
-[Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/161OVUODgvmB0QYfQ0_YQVAhP0mV6h9t_UKBwZpWo8Ig/edit?usp=sharing)
+![](figures/allAXT_Reg_4wpa_nonReg_4wpa_heatmap.png?v=2)
+
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)]()
 
 
 ## Gene Set Enrichment Analysis (GSEA)
@@ -412,15 +414,56 @@ The plot provides a visual summary of the top significant positively and negativ
 
 ###### Reg vs nonReg
 
-<img src="figures/Reg_nonReg_GO_dotplot.png?v=1" width="32%"> <img src="figures/Reg_nonReg_Reactome_dotplot.png?v=1" width="32%"> <img src="figures/Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%">
+<img src="figures/allAXT_Reg_nonReg_GO_dotplot.png?v=1" width="32%"> <img src="figures/allAXT_Reg_nonReg_Reactome_dotplot.png?v=1" width="32%"> <img src="figures/allAXT_Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%">
 
 - No KEGG results for Reg vs Non Reg 
 
-[Download here GO significant results for Reg vs nonReg](https://docs.google.com/spreadsheets/d/1pCvboT-XlQIKP9L5LIO4om97TlNJT59R410t6wtgAdo/edit?usp=sharing)
+[Download here GO significant results for Reg vs nonReg]() 
 
 ###### Reg_4wp vs nonReg_4wpa
 
-<img src="figures/Reg_nonReg_4wpa_GO_dotplot.png?v=1" width="24%"> <img src="figures/Reg_nonReg_4wpa_Reactome_dotplot.png?v=1" width="24%"> <img src="figures/Reg_nonReg_4wpa_KEGG_dotplot.png?v=1" width="24%"> <img src="figures/Reg_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="24%">
+<img src="figures/allAXT_Reg_nonReg_4wpa_GO_dotplot.png?v=1" width="24%"> <img src="figures/allAXT_Reg_nonReg_4wpa_Reactome_dotplot.png?v=1" width="24%"> <img src="figures/allAXT_Reg_nonReg_4wpa_KEGG_dotplot.png?v=1" width="24%"> <img src="figures/allAXT_Reg_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="24%">
 
-[Download here GO significant results for Reg_4wpa vs nonReg_4wpa](https://docs.google.com/spreadsheets/d/1APKFfFX5hKd14WvMBA8X4mCOtY1mLkyYJEY-48UX0nI/edit?usp=sharing) 
+[Download here GO significant results for Reg_4wpa vs nonReg_4wpa]()
+
+
+## Zooming on Osteosarcoma 
+
+
+##### Osteosarcoma stats
+
+| Metric | Value |
+|---|---:|
+| Cells | 23,120 |
+| Genes | 28,670 |
+
+
+| Sample | Cells |
+|---|---:|
+| nonReg | 9,009 |
+| Reg_4wpa | 6,553 |
+| nonReg_4wpa | 6,246 |
+| Reg | 1,247 |
+| Uninjured2 | 28 |
+| Regen_14_DPA | 17 |
+| Uninjured1 | 13 |
+| Non_Regen_14_DPA | 7 |
+| **Total** | **23,120** |
+
+
+###### Reg vs nonReg in Osteosarcoma 
+![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
+
+###### Reg_4wpa vs nonReg_4wpa in Osteosarcoma 
+![](figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
+
+
+
+### GSEA on Osteosarcoma subset 
+
+<img src="figures/Osteosarcoma_Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_nonReg_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_nonReg_GO_dotplot.png?v=1" width="32%">
+
+<img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_GO_dotplot.png?v=1" width="32%">
+
+
 

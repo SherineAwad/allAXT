@@ -1,3 +1,4 @@
+
 import argparse
 import pandas as pd
 import numpy as np
@@ -72,7 +73,7 @@ def main():
             0, 1e-10, len(ranking)
         )
 
-    # Get gene sets using the working script's library-selection approach
+    # Get all matching gene-set libraries
     from gseapy.parser import get_library_name
     libraries = get_library_name(organism=args.organism.capitalize())
 
@@ -111,8 +112,29 @@ def main():
             f"be checked using GSEApy's get_library_name()."
         )
 
-    gene_set = matched[0]
-    print(f"Using gene set: {gene_set}")
+    print(f"Matched {len(matched)} libraries:")
+    for lib in matched:
+        print(f"  {lib}")
+
+    # Load and combine gene sets from ALL matching libraries
+    gene_set = {}
+
+    for lib in matched:
+        library_gene_sets = gp.get_library(
+            name=lib,
+            organism=args.organism.capitalize()
+        )
+
+        for term, genes in library_gene_sets.items():
+            combined_term = f"{lib}::{term}"
+            gene_set[combined_term] = genes
+
+    if not gene_set:
+        raise ValueError(
+            f"No gene sets could be loaded from matching libraries: {matched}"
+        )
+
+    print(f"Combined total: {len(gene_set)} gene sets")
 
     # Run GSEA
     results = gp.prerank(
@@ -355,4 +377,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
