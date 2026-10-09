@@ -330,14 +330,12 @@ The top-ranked differential genes selected for display in the heatmap are chosen
 
 ###### Reg vs nonReg
 
-![](figures/Reg_nonReg_heatmap.png?v=1)
 
 [Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/1omm4zeO5QSxG9W-GHoHs8MzxyBSJReD2iRRc1uunU2s/edit?usp=sharing)
 
 
 ###### Reg_4wp vs nonReg_4wpa
 
-![](figures/Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
 
 [Download Filtered DGE Results (Adjusted p-value < 0.05)](https://docs.google.com/spreadsheets/d/161OVUODgvmB0QYfQ0_YQVAhP0mV6h9t_UKBwZpWo8Ig/edit?usp=sharing)
 
