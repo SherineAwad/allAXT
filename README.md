@@ -455,13 +455,30 @@ The plot provides a visual summary of the top significant positively and negativ
 ###### Reg_4wpa vs nonReg_4wpa in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
 
+###### Reg vs Reg_4wpa in Osteosarcoma 
+![](figures/Osteosarcoma_Reg_Reg_4wpa_heatmap.png?v=1) 
+
+###### nonReg vs nonReg_4wpa in Osteosarcoma 
+![](figures/Osteosarcoma_nonReg_nonReg_4wpa_heatmap.png?v=1)
 
 
 ### GSEA on Osteosarcoma subset 
 
+##### Reg vs nonReg in Osteosarcoma
+
 <img src="figures/Osteosarcoma_Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_nonReg_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_nonReg_GO_dotplot.png?v=1" width="32%">
+
+##### Reg_4wpa vs nonReg_4wpa in Osteosarcoma 
 
 <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_GO_dotplot.png?v=1" width="32%">
 
 
+###### Reg vs Reg_4wpa in Osteosarcoma 
+<img src="figures/Osteosarcoma_Reg_Reg_4wpa_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_Reg_4wpa_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_Reg_4wpa_GO_dotplot.png?v=1" width="32%">
 
+
+###### nonReg vs nonReg_4wpa in Osteosarcoma
+
+<img src="figures/Osteosarcoma_nonReg_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="49%"> <img src="figures/Osteosarcoma_nonReg_nonReg_4wpa_KEGG_dotplot.png?v=1" width="49%">
+
+ 
