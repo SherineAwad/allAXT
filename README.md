@@ -452,15 +452,23 @@ The plot provides a visual summary of the top significant positively and negativ
 ###### Reg vs nonReg in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
 
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1K5Afg8pJI_vqU2OkqImgvOOlnsMn6wTsmIENeUK5Tqc/edit?usp=sharing)
+
 ###### Reg_4wpa vs nonReg_4wpa in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
+
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1rRC3Wp70NdtVzXRq3E6bV0l6cZGT83CCeV60A8abpuc/edit?usp=sharing )
+
 
 ###### Reg vs Reg_4wpa in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_Reg_4wpa_heatmap.png?v=1) 
 
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1lPcLLS8J-TmvLGyCBWIkUBROLtM3-uh6PBnIR20Tdj0/edit?usp=sharing)
+
 ###### nonReg vs nonReg_4wpa in Osteosarcoma 
 ![](figures/Osteosarcoma_nonReg_nonReg_4wpa_heatmap.png?v=1)
-
+ 
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1L0iN3cop0KhRtEUF7nRKyWR1kxwLvGsgVRQp6kinDbM/edit?usp=sharing)
 
 ### GSEA on Osteosarcoma subset 
 
@@ -468,17 +476,25 @@ The plot provides a visual summary of the top significant positively and negativ
 
 <img src="figures/Osteosarcoma_Reg_nonReg_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_nonReg_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_nonReg_GO_dotplot.png?v=1" width="32%">
 
+[GO significant results](https://docs.google.com/spreadsheets/d/1MBRk_oyxm9eNn2Hx3S-odcnw9KLDcQQPiVn-5I_Tesg/edit?usp=sharing)
+
 ##### Reg_4wpa vs nonReg_4wpa in Osteosarcoma 
 
 <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_GO_dotplot.png?v=1" width="32%">
 
+[GO significant results](https://docs.google.com/spreadsheets/d/15s6ozWmQcN8TVBsMlAYkgpqJuUpTBy7K5urtpyk4MkA/edit?usp=sharing)
 
 ###### Reg vs Reg_4wpa in Osteosarcoma 
 <img src="figures/Osteosarcoma_Reg_Reg_4wpa_Hallmark_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_Reg_4wpa_KEGG_dotplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Reg_Reg_4wpa_GO_dotplot.png?v=1" width="32%">
+
+[GO significant results](https://docs.google.com/spreadsheets/d/1Jjf6Ea5cMaCBGOfpRBY3boPxbJkh8cqjT3vee7mZPfA/edit?usp=sharing)
 
 
 ###### nonReg vs nonReg_4wpa in Osteosarcoma
 
 <img src="figures/Osteosarcoma_nonReg_nonReg_4wpa_Hallmark_dotplot.png?v=1" width="49%"> <img src="figures/Osteosarcoma_nonReg_nonReg_4wpa_KEGG_dotplot.png?v=1" width="49%">
+
+- No GO significant results here
+[GO all results no significant](https://docs.google.com/spreadsheets/d/1AtCmQyrCM7bKMRHiF9-yI_HZcsMSD__terXS6_EGSrY/edit?usp=sharing) 
 
  
