@@ -499,3 +499,30 @@ The plot provides a visual summary of the top significant positively and negativ
 
 
 
+
+### Feature plots for genes of Interest 
+
+<img src="figures/allAXT_Grem1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Prrx1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgf10_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Hand2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Shox2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Sox9_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Edil3_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Mmp13_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Mmp14_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Bmp5_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ptx3_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fbn2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Dpt_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Postn_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Cthrc1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Lrrc17_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Bmp2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Bmp4_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Id1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Id2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Id3_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Msx1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Msx2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Dlx5_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Wif1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Nog_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fst_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Omd_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Kazald1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Panx3_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Alpl_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Sp7_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ibsp_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Bglap_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Bglap2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ifitm5_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Smpd3_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Sparc_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Dcn_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Aspn_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Bgn_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Cdkn1a_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Mki67_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Mcm2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Rrm2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Ccna2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Top2a_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Birc5_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Plk1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Cenpf_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ect2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Wnt5a_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Pdlim4_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Myl10_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Col12a1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Dmp1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Phex_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Mepe_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Runx2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Satb2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Lum_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col3a1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col2a1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Acan_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col11a1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fbln7_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Vim_featureplot.png?v=1" width="32%">
+
