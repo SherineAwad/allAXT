@@ -429,11 +429,8 @@ The plot provides a visual summary of the top significant positively and negativ
 
 
 
-![](figures/Osteosarcoma_umap.png?v=1) <img src="figures/allAXT_Fgf10_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgf2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgf8_featureplot.png?v=1" width="32%">
-<img src="figures/allAXT_Fgfr1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgfr2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Dusp4_featureplot.png?v=1" width="32%">
-<img src="figures/allAXT_Dusp6_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Etv1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Etv5_featureplot.png?v=1" width="32%">
-<img src="figures/allAXT_Spry1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Spry2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgf1_featureplot.png?v=1" width="32%">
-<img src="figures/allAXT_Frs2_featureplot.png?v=1" width="32%">
+
+![](figures/Osteosarcoma_umap.png?v=1) 
 ![](figures/Osteosarcoma_perSample_umap.png?v=1)
 ![](figures/Osteosarcoma_clusters_umap.png?v=1)
 
