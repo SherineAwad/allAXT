@@ -525,4 +525,9 @@ The plot provides a visual summary of the top significant positively and negativ
 <img src="figures/allAXT_Lum_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col3a1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col2a1_featureplot.png?v=1" width="32%">
 <img src="figures/allAXT_Acan_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col11a1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fbln7_featureplot.png?v=1" width="32%">
 <img src="figures/allAXT_Vim_featureplot.png?v=1" width="32%">
-
+<img src="figures/allAXT_Klf4_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ocln_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Jam2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Cgnl1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Dsp_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Cldn10_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Zeb1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Zeb2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Snai2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Twist1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Cdh2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fn1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Vim_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Krt1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Krt10_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Krtdap_featureplot.png?v=1" width="32%">
