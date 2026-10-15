@@ -454,6 +454,14 @@ The plot provides a visual summary of the top significant positively and negativ
 | Non_Regen_14_DPA | 7 |
 | **Total** | **23,120** |
 
+#### Osteosarcoma subtypes markers 
+
+<img src="figures/Osteosarcoma_Col2a1_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Acan_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Runx2_featureplot.png?v=1" width="32%">
+<img src="figures/Osteosarcoma_Mki67_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Grem1_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Fgf10_featureplot.png?v=1" width="32%">
+<img src="figures/Osteosarcoma_Bmp2_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Birc5_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Ccna2_featureplot.png?v=1" width="32%">
+<img src="figures/Osteosarcoma_Myl10_featureplot.png?v=1" width="32%">
+
+
 
 ###### Reg vs nonReg in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
