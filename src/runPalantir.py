@@ -24,26 +24,67 @@ def save_trajectory_plots(
     figures_dir,
     prefix,
     root_safe,
+    all_branches=False,
+    branch_names=None,
 ):
-    """Save one trajectory figure showing only the specified branch."""
+    """Save either the dominant branch or all branches in one UMAP figure."""
 
     fig, ax = plt.subplots(figsize=(8, 8))
 
-    palantir.plot.plot_trajectory(
-        adata,
-        branch=branch_name,
-        pseudo_time_key=pseudotime_key,
-        masks_key=masks_key,
-        embedding_basis="X_umap",
-        cell_color=pseudotime_key,
-        n_arrows=10,
-        ax=ax,
-        figsize=(8, 8),
-    )
+    if all_branches:
+        if not branch_names:
+            raise ValueError(
+                "Branch names are required when plotting all branches."
+            )
 
-    ax.set_title(
-        f"Palantir trajectory: root {root_safe} ({branch_name})"
-    )
+        # Assign distinct hexadecimal colors to the branches.
+        palette = list(plt.get_cmap("tab10").colors)
+        branch_colors = {
+            name: plt.matplotlib.colors.to_hex(
+                palette[i % len(palette)]
+            )
+            for i, name in enumerate(branch_names)
+        }
+
+        # Highlight the dominant branch in red.
+        branch_colors[branch_name] = "#FF0000"
+
+        palantir.plot.plot_trajectories(
+            adata,
+            groups=branch_names,
+            pseudo_time_key=pseudotime_key,
+            masks_key=masks_key,
+            embedding_basis="X_umap",
+            cell_color=pseudotime_key,
+            n_arrows=10,
+            ax=ax,
+            figsize=(8, 8),
+            palantir_fates_colors=branch_colors,
+            show_legend=True,
+        )
+
+        ax.set_title(
+            f"Palantir trajectories: root {root_safe}\n"
+            f"Dominant branch: {branch_name}"
+        )
+
+    else:
+        # Preserve the original single-branch plotting behaviour.
+        palantir.plot.plot_trajectory(
+            adata,
+            branch=branch_name,
+            pseudo_time_key=pseudotime_key,
+            masks_key=masks_key,
+            embedding_basis="X_umap",
+            cell_color=pseudotime_key,
+            n_arrows=10,
+            ax=ax,
+            figsize=(8, 8),
+        )
+
+        ax.set_title(
+            f"Palantir trajectory: root {root_safe} ({branch_name})"
+        )
 
     plot_path = figures_dir / (
         f"{prefix}_palantir_root_{root_safe}.png"
@@ -77,8 +118,15 @@ def main():
         required=True,
         help="Leiden cluster to use as the root, e.g. 0, 1, 4, or 5",
     )
+    parser.add_argument(
+        "--all",
+        choices=["true", "false"],
+        default="true",
+        help="Plot all branches (true) or only the dominant branch (false; default: true)",
+    )
 
     args = parser.parse_args()
+    plot_all_branches = args.all == "true"
 
     output_dir = Path.cwd()
     figures_dir = output_dir / "figures"
@@ -358,6 +406,7 @@ def main():
     mask_df.to_csv(mask_path)
     print(f"[INFO] Saved branch masks: {mask_path}")
 
+    # Plot either all branches or only the dominant branch.
     save_trajectory_plots(
         adata,
         dominant_branch,
@@ -366,6 +415,8 @@ def main():
         figures_dir,
         args.prefix,
         root_safe,
+        all_branches=plot_all_branches,
+        branch_names=all_branch_names,
     )
 
     summary = result_df[
