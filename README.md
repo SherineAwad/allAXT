@@ -424,10 +424,8 @@ The plot provides a visual summary of the top significant positively and negativ
 
 [Download here GO significant results for Reg_4wpa vs nonReg_4wpa](https://docs.google.com/spreadsheets/d/12M6VDP1tYVurXHbE1G-P8QmSgLltNymslRjaiR14gtI/edit?usp=sharing) 
 
-### ON GOING 
+
 ## Zooming on Osteosarcoma 
-
-
 
 
 ![](figures/Osteosarcoma_umap.png?v=1) 
