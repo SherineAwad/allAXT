@@ -459,17 +459,20 @@ The plot provides a visual summary of the top significant positively and negativ
 <img src="figures/Osteosarcoma_Bmp2_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Birc5_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Ccna2_featureplot.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Myl10_featureplot.png?v=1" width="32%">
 
-#### Preliminary trajectories in Osteosarcoma 
-
-<img src="figures/Osteosarcoma_palantir_root_0.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_1.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_2.png?v=1" width="32%">
-<img src="figures/Osteosarcoma_palantir_root_3.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_4.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_5.png?v=1" width="32%">
-<img src="figures/Osteosarcoma_palantir_root_6.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_7.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_8.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Dlx5_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Sp7_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Alpl_featureplot.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Ibsp_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Ifitm5_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Smpd3_featureplot.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Bglap_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Bglap2_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Dmp1_featureplot.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Phex_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Mepe_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Ndufa1_featureplot.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Uqcrh_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Cox6b1_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Atp5e_featureplot.png?v=1" width="32%">
 <img src="figures/Osteosarcoma_Tfam_featureplot.png?v=1" width="32%"> <img src="figures/Osteosarcoma_Acadm_featureplot.png?v=1" width="32%">
+
+
+
+#### Preliminary trajectories in Osteosarcoma 
+
+<img src="figures/Osteosarcoma_palantir_root_0.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_1.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_2.png?v=1" width="32%">
+<img src="figures/Osteosarcoma_palantir_root_3.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_4.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_5.png?v=1" width="32%">
+<img src="figures/Osteosarcoma_palantir_root_6.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_7.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_8.png?v=1" width="32%">
 
 ###### Reg vs nonReg in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
