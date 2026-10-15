@@ -470,9 +470,9 @@ The plot provides a visual summary of the top significant positively and negativ
 
 #### Preliminary trajectories in Osteosarcoma 
 
-<img src="figures/Osteosarcoma_palantir_root_0.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_1.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_2.png?v=1" width="32%">
-<img src="figures/Osteosarcoma_palantir_root_3.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_4.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_5.png?v=1" width="32%">
-<img src="figures/Osteosarcoma_palantir_root_6.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_7.png?v=1" width="32%"> <img src="figures/Osteosarcoma_palantir_root_8.png?v=1" width="32%">
+<img src="figures/Osteoc1_palantir_root_1.png?v=1" width="32%"> <img src="figures/Osteoc2_palantir_root_2.png?v=1" width="32%"> <img src="figures/Osteoc3_palantir_root_3.png?v=1" width="32%">
+<img src="figures/Osteoc4_palantir_root_4.png?v=1" width="32%"> <img src="figures/Osteoc5_palantir_root_5.png?v=1" width="32%"> <img src="figures/Osteoc6_palantir_root_6.png?v=1" width="32%">
+<img src="figures/Osteoc7_palantir_root_7.png?v=1" width="32%"> <img src="figures/Osteoc8_palantir_root_8.png?v=1" width="32%">
 
 ###### Reg vs nonReg in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
