@@ -8,6 +8,7 @@ import numpy as np
 parser = argparse.ArgumentParser()
 parser.add_argument("--input", required=True)
 parser.add_argument("--prefix", required=True)
+parser.add_argument("--celltype", required=True)
 args = parser.parse_args()
 
 adata = sc.read_h5ad(args.input)
@@ -17,7 +18,7 @@ os.makedirs("figures", exist_ok=True)
 # =========================
 # COUNTS TABLE
 # =========================
-ct_counts = pd.crosstab(adata.obs["celltype"], adata.obs["sample"])
+ct_counts = pd.crosstab(adata.obs[args.celltype], adata.obs["sample"])
 ct_counts["Total"] = ct_counts.sum(axis=1)
 ct_counts.loc["Total"] = ct_counts.sum(axis=0)
 
@@ -89,3 +90,4 @@ plt.close()
 
 print(f"Saved: {args.prefix}_cell_counts.csv")
 print(f"Saved: figures/{args.prefix}_cell_ratios.png")
+

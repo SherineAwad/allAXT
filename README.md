@@ -484,10 +484,15 @@ The plot provides a visual summary of the top significant positively and negativ
 [Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1SN7v6AdfVoFIU-jkNxuNrPqe3eueNCQ-Xgs1iC3oeBQ/edit?usp=sharing) 
 
 
+##### Cellratio in Osteosarcoma subset 
+
+![](figures/Osteosarcoma_cell_ratios.png?v=1)
+
 ###### Reg vs nonReg in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
 
 [Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1K5Afg8pJI_vqU2OkqImgvOOlnsMn6wTsmIENeUK5Tqc/edit?usp=sharing)
+
 
 ###### Reg_4wpa vs nonReg_4wpa in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_4wpa_nonReg_4wpa_heatmap.png?v=1)
