@@ -475,6 +475,15 @@ The plot provides a visual summary of the top significant positively and negativ
 <img src="figures/Osteoc6_palantir_root_6.png?v=2" width="32%"> <img src="figures/Osteoc7_palantir_root_7.png?v=2" width="32%"> <img src="figures/Osteoc8_palantir_root_8.png?v=2" width="32%">
 
 
+#### Zooming on subcluster 0 in Osteosarcoma 
+
+![](figures/Osteosarcoma_0_vs_rest_heatmap.png?v=1) 
+
+##### Significant DGE Osteosarcoma cluster 0 vs the rest 
+
+[Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1SN7v6AdfVoFIU-jkNxuNrPqe3eueNCQ-Xgs1iC3oeBQ/edit?usp=sharing) 
+
+
 ###### Reg vs nonReg in Osteosarcoma 
 ![](figures/Osteosarcoma_Reg_nonReg_heatmap.png?v=1)
 
