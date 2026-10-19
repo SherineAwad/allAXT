@@ -484,6 +484,16 @@ The plot provides a visual summary of the top significant positively and negativ
 [Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1SN7v6AdfVoFIU-jkNxuNrPqe3eueNCQ-Xgs1iC3oeBQ/edit?usp=sharing) 
 
 
+##### DGE in cluster 0 vs the rest in Reg sample 
+![](figures/Osteosarcoma_Reg_0_vs_rest_heatmap.png?v=1) 
+##### DGE in cluster 0 vs rest in nonReg sample 
+![](figures/Osteosarcoma_nonReg_0_vs_rest_heatmap.png?v=1)
+##### DGE in cluster 0 vs rest in Reg_4wpa 
+![](figures/Osteosarcoma_Reg_4wpa_0_vs_rest_heatmap.png?v=1)
+##### DGE In cluster 0 vs rest in nonReg_4wpa 
+![](figures/Osteosarcoma_nonReg_4wpa_0_vs_rest_heatmap.png?v=1)
+
+
 ##### Cellratio in Osteosarcoma subset 
 
 ![](figures/Osteosarcoma_cell_ratios.png?v=1)

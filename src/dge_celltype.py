@@ -1,3 +1,4 @@
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -16,6 +17,7 @@ parser.add_argument("--N", type=int, required=True)  # heatmap size
 parser.add_argument("--pvalue", type=float, default=0.05)
 parser.add_argument("--group", required=True)
 parser.add_argument("--celltype", required=True)
+parser.add_argument("--sample", default=None)
 args = parser.parse_args()
 
 os.makedirs("figures", exist_ok=True)
@@ -26,13 +28,38 @@ os.makedirs("figures", exist_ok=True)
 adata = sc.read_h5ad(args.input)
 
 # ----------------------------
+# OPTIONAL SAMPLE FILTER
+# ----------------------------
+if args.sample is not None:
+    if "sample" not in adata.obs.columns:
+        raise ValueError("'sample' column not found in adata.obs")
+
+    if args.sample not in adata.obs["sample"].astype(str).unique():
+        raise ValueError(
+            f"Sample '{args.sample}' not found. "
+            f"Available samples: {adata.obs['sample'].astype(str).unique()}"
+        )
+
+    adata = adata[
+        adata.obs["sample"].astype(str) == args.sample
+    ].copy()
+
+    print(f"Using sample: {args.sample}")
+else:
+    print("Using all cells.")
+
+# ----------------------------
 # FIX: TYPE MATCHING FOR GROUP
 # ----------------------------
-# Automatically cast args.group to int if the target column contains integer categories or int types
 col_dtype = adata.obs[args.celltype].dtype
-is_cat_int = pd.api.types.is_categorical_dtype(col_dtype) and pd.api.types.is_integer_dtype(adata.obs[args.celltype].cat.categories)
+is_cat_int = (
+    isinstance(col_dtype, pd.CategoricalDtype)
+    and pd.api.types.is_integer_dtype(adata.obs[args.celltype].cat.categories)
+)
 
-if args.group.isdigit() and (pd.api.types.is_integer_dtype(col_dtype) or is_cat_int):
+if args.group.isdigit() and (
+    pd.api.types.is_integer_dtype(col_dtype) or is_cat_int
+):
     args.group = int(args.group)
 
 # ----------------------------
@@ -116,3 +143,4 @@ plt.savefig(
     bbox_inches="tight"
 )
 plt.close()
+
