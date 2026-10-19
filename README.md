@@ -479,24 +479,24 @@ The plot provides a visual summary of the top significant positively and negativ
 
 ![](figures/Osteosarcoma_0_vs_rest_heatmap.png?v=1) 
 
-##### Significant DGE Osteosarcoma cluster 0 vs the rest 
+#### Significant DGE Osteosarcoma cluster 0 vs the rest 
 
 [Download Filtered DGE Results (Adjusted p-value  \&lt; 0.05)](https://docs.google.com/spreadsheets/d/1SN7v6AdfVoFIU-jkNxuNrPqe3eueNCQ-Xgs1iC3oeBQ/edit?usp=sharing) 
 
 
-##### DGE in cluster 0 vs the rest in Reg sample 
+#### DGE in cluster 0 vs the rest in Reg sample 
 ![](figures/Osteosarcoma_Reg_0_vs_rest_heatmap.png?v=1) 
 [Download filtered DGE results (adjusted p-value \&alt;0.05)](https://docs.google.com/spreadsheets/d/1r0xK4TN5DEoTnws6GAQzb3WXJFrOkR6PzmbJZTI3Cns/edit?usp=sharing)
 
-##### DGE in cluster 0 vs rest in nonReg sample 
+#### DGE in cluster 0 vs rest in nonReg sample 
 ![](figures/Osteosarcoma_nonReg_0_vs_rest_heatmap.png?v=1)
 [Download filtered DGE results (adjusted p-value \&alt;0.05)](https://docs.google.com/spreadsheets/d/12xfk2jqftKP3192QvIvc3g7cGUl6PHB1lElkm2DPZ-Y/edit?usp=sharing)
 
-##### DGE in cluster 0 vs rest in Reg_4wpa 
+#### DGE in cluster 0 vs rest in Reg_4wpa 
 ![](figures/Osteosarcoma_Reg_4wpa_0_vs_rest_heatmap.png?v=1)
 [Download filtered DGE results (adjusted p-value \&alt;0.05)](https://docs.google.com/spreadsheets/d/1sAgRsNPE1s51lx_fU6KK5Wo7FS6MewRZl8bngoZ0UJc/edit?usp=sharing)
 
-##### DGE In cluster 0 vs rest in nonReg_4wpa 
+#### DGE In cluster 0 vs rest in nonReg_4wpa 
 ![](figures/Osteosarcoma_nonReg_4wpa_0_vs_rest_heatmap.png?v=1)
 [Download filtered DGE results (adjusted p-value \&alt;0.05)](https://docs.google.com/spreadsheets/d/1qBvkqXnhxoLYARLNateh6E7sxQTD3TiQYIEmJBOdsRg/edit?usp=sharing)
 
