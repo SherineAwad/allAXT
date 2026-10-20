@@ -593,4 +593,15 @@ The plot provides a visual summary of the top significant positively and negativ
 <img src="figures/allAXT_Dusp6_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Etv1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Etv5_featureplot.png?v=1" width="32%">
 <img src="figures/allAXT_Spry1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Spry2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgf1_featureplot.png?v=1" width="32%">
 <img src="figures/allAXT_Frs2_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Myl10_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Dpt_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Parvb_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Pdlim4_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Lima1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Col12a1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Has2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ablim3_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Ecm1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Scara5_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Rarres1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Notum_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Fbln7_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Msx1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Hey1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Dusp4_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Aldh3a1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Nsg1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Ccn5_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Grem1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Fgf10_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Wif1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Spink6_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Mt4_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Btg1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Trp53inp1_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Wls_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Ror2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Vangl2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Vangl1_featureplot.png?v=1" width="32%">
+<img src="figures/allAXT_Wnt5a_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Axin2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Daam2_featureplot.png?v=1" width="32%">
 
