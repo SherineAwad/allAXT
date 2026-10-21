@@ -605,3 +605,14 @@ The plot provides a visual summary of the top significant positively and negativ
 <img src="figures/allAXT_Ror2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Vangl2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Vangl1_featureplot.png?v=1" width="32%">
 <img src="figures/allAXT_Wnt5a_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Axin2_featureplot.png?v=1" width="32%"> <img src="figures/allAXT_Daam2_featureplot.png?v=1" width="32%">
 
+
+
+### Celltype similarity using Optimal Transport  (POT) 
+
+![](figures/allAXT_sinkhorn_pot_hvg5000_matrix.png?v=1) 
+
+#### Zooming on Osteosarcoma and Mesenchymal 
+
+![]figures/allAXT_sinkhorn_pot_hvg5000_focus_matrix.png?v=1) 
+
+
