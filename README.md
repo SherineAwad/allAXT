@@ -613,6 +613,6 @@ The plot provides a visual summary of the top significant positively and negativ
 
 #### Zooming on Osteosarcoma and Mesenchymal 
 
-![]figures/allAXT_sinkhorn_pot_hvg5000_focus_matrix.png?v=1) 
+![](figures/allAXT_sinkhorn_pot_hvg5000_focus_matrix.png?v=1) 
 
 
