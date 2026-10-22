@@ -618,6 +618,7 @@ The plot provides a visual summary of the top significant positively and negativ
 
 
 ### Celltype simialrity using Optimal Transport (OT Cost) 
+#### Smaller cost is higher similarity 
 
 ![](figures/allAXT_OTcost_hvg5000_matrix.png?v=1)
 
