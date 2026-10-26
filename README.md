@@ -632,7 +632,9 @@ The plot provides a visual summary of the top significant positively and negativ
 - Helps assess whether regenerative-associated cell states resemble existing subtypes or differ from their non-regenerative counterparts.
 
 #### Umaps of Osteosarcoma and Mesenchymal 
+##### Mesenchymal 
 ![](figures/Mesenchymal_clusters_umap.png?v=1) 
+##### Osteosarcoma 
 ![](figures/Osteosarcoma_clusters_umap.png?v=1)
 
 #### Optimal Transport Comparison of Osteosarcoma and Mesenchymal Subtypes Across Conditions
