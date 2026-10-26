@@ -623,3 +623,18 @@ The plot provides a visual summary of the top significant positively and negativ
 ![](figures/allAXT_OTcost_hvg5000_matrix.png?v=1)
 
 ![](figures/allAXT_OTcost_hvg5000_focus_matrix.png?v=1)
+
+
+### Subtypes similarity using Optimal Transport (OT cost)
+
+- Compares cell-state distributions between subtypes across experimental conditions and time points.
+- Identifies which subtypes show similar or distinct cellular profiles across regenerative and non-regenerative conditions.
+- Helps assess whether regenerative-associated cell states resemble existing subtypes or differ from their non-regenerative counterparts.
+
+#### Umaps of Osteosarcoma and Mesenchymal 
+![](figures/Mesenchymal_clusters_umap.png?v=1) 
+![](figures/Osteosarcoma_clusters_umap.png?v=1)
+
+#### Optimal Transport Comparison of Osteosarcoma and Mesenchymal Subtypes Across Conditions
+![](figures/Osteosarcoma_Mesenchymal_ot_cost_heatmap.png?v=1)
+
