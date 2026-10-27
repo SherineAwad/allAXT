@@ -640,3 +640,9 @@ The plot provides a visual summary of the top significant positively and negativ
 #### Optimal Transport Comparison of Osteosarcoma and Mesenchymal Subtypes Across Conditions
 ![](figures/Osteosarcoma_Mesenchymal_ot_cost_heatmap.png?v=1)
 
+
+#### And their subtypes composition is: 
+
+![](figures/Osteosarcoma_Mesenchymal_composition_barplot.png?v=1)
+
+
