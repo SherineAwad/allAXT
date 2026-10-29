@@ -652,6 +652,6 @@ The plot provides a visual summary of the top significant positively and negativ
 
 [Download full dge here](https://docs.google.com/spreadsheets/d/1Y82lC5uxHYqR1lNOBvqi28vr24WMYTRQpRaHA7EwSbE/edit?usp=sharing) 
 
-![](figures/Osteosarcoma_Mesenchymal_Osteosarcoma_vs_Mesenchymal_heatmap.png?v=1) 
+![](figures/Osteosarcoma_Mesenchymal_Osteosarcoma_vs_Mesenchymal_heatmap.png?v=2)
 
 
