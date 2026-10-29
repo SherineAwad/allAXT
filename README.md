@@ -655,3 +655,13 @@ The plot provides a visual summary of the top significant positively and negativ
 ![](figures/Osteosarcoma_Mesenchymal_Osteosarcoma_vs_Mesenchymal_heatmap.png?v=2)
 
 
+##### More condition specific DGE between Osteosarcoma and Mesenchymal 
+
+
+[OS_Reg_4wpa_Mesen_Regen_14DPA_DGE](https://docs.google.com/spreadsheets/d/12pWVJFyxg3NdQDXOdYPXUxko4WaldjTyT5n0Z2LaGeI/edit?usp=sharing)
+
+[OS_Reg_4wpa_Mesen_Uninjured_DGE](https://docs.google.com/spreadsheets/d/1i4QeEYxAOWN3ezTcOHIvXkvl3h3LVPQyvBlmPugkLtM/edit?usp=sharing)
+
+[OS_nonReg_4wpa_Mesen_Regen_14_DPA_DGE](https://docs.google.com/spreadsheets/d/1maSpACTX-0Z5UzNMSrgosS-FNVK6GS6KiA-1WJyJMro/edit?usp=sharing)
+
+[OS_nonReg_4wpa_Mesen_uninjured_DGE](https://docs.google.com/spreadsheets/d/1QBn0ISVmsbRdKq5kPDH34SuLtG7UxcDLntskqxy26IQ/edit?usp=sharing)
