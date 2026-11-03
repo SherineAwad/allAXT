@@ -655,3 +655,16 @@ The plot provides a visual summary of the top significant positively and negativ
 ![](figures/Osteosarcoma_Mesenchymal_Osteosarcoma_vs_Mesenchymal_heatmap.png?v=2)
 
 
+
+## Rescue genes candidates 
+
+Rescued genes are significantly dysregulated in the disease state (Base) but return to a normal, non-significant flat state in the treated state (Group).
+We used the following params:
+
+* **`--base-adj-pvalue-cutoff`** `0.05`
+* **`--base-min-logfc`** `0.25`
+* **`--group-adj-pvalue-cutoff`** `0.20`
+* **`--group-max-logfc`** `0.1`
+
+
+[CLick here to download base vs target candidate rescue genes](https://drive.google.com/drive/folders/1sQuAqvZTqhgiKIrPGNX8pws5cnX2atXz?usp=sharing)
