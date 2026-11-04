@@ -667,4 +667,4 @@ We used the following params:
 * **`--group-max-logfc`** `0.1`
 
 
-[CLick here to download base vs target candidate rescue genes](https://drive.google.com/drive/folders/1sQuAqvZTqhgiKIrPGNX8pws5cnX2atXz?usp=sharing)
+[CLick here to download base vs target candidate rescue genes and their enriched pathways](https://drive.google.com/drive/folders/1sQuAqvZTqhgiKIrPGNX8pws5cnX2atXz?usp=sharing)
