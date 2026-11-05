@@ -668,3 +668,36 @@ We used the following params:
 
 
 [CLick here to download base vs target candidate rescue genes and their enriched pathways](https://drive.google.com/drive/folders/1sQuAqvZTqhgiKIrPGNX8pws5cnX2atXz?usp=sharing)
+
+
+### Milo cell state analysis 
+
+- Milo uses overlapping "neighborhoods" across the entire dataset to define fine-grained cell state structure that standard cell-type clustering can miss.
+- We compared the proportion of target cells versus uninjured mesenchymal cells in each neighborhood to see how their local microenvironments differ between conditions.
+- This approach highlights which cellular states are enriched or depleted between the comparison groups.
+- Milo looks at fine-grained local microenvironments rather than broad cell types, tracking whether cells from different conditions share the same transcriptomic neighborhoods.
+
+- Comparing how each state's neighborhood distribution shifts relative to the shared baseline reveals whether the compared groups share common microenvironments or occupy distinct, diverged states.
+
+#### What we see in the plots: 
+
+- **The peak at zero:** This is the background tissue (all the other cell types in the global dataset like immune cells, endothelial cells, etc.) where *neither* your osteosarcoma cells nor the uninjured mesenchymal cells live.
+- **The separate positive bars (right tail):** These are neighborhoods **dominated by your osteosarcoma cells**. It means these specific microenvironments contain your osteosarcoma population, but the uninjured mesenchymal cells are completely missing or rare there.
+- **The separate negative bars (left tail):** These are neighborhoods **dominated by the uninjured mesenchymal baseline**. It means these microenvironments contain the uninjured mesenchymal cells, but your osteosarcoma cells are missing or rare there.
+
+- The fact that you see a big zero-peak *plus* separate positive and negative bars means your osteosarcoma cells and the uninjured mesenchymal cells occupy **distinct, non-overlapping local environments**. They are not mixing together into the same cellular states; instead, each population lives in its own exclusive neighborhoods on the global manifold.
+
+#### Comparing the two plots 
+
+- **The patterns are nearly identical:** Both the regenerative and non-regenerative plots show the exact same three features—the massive background peak at zero, and the separate positive (osteosarcoma-dominated) and negative (mesenchymal-dominated) tails. 
+
+-  **Both tumors diverge from the baseline the same way:** Because both plots have roughly the same shape and spread, it shows that both osteosarcoma groups separate from the uninjured mesenchymal cells to a similar degree. 
+
+- **Neither group is "returning" to baseline:** If one group (e.g., the regenerative one) were closer to the uninjured state, its positive and negative bars would be much smaller, and it would have much more overlap with the baseline neighborhoods. Instead, both groups show the same broad separation.
+
+- Comparing the two plots visually suggests that regenerative and non-regenerative osteosarcoma cells are equally distinct from uninjured mesenchymal cells. There is no obvious visual evidence that the regenerative cells have shifted back toward the healthy baseline state.
+
+![](figures/milo_nonReg_4wpa_Osteosarcoma_vs_Uninjured_Mesenchymal_ratio_histogram.png?v=1)
+
+![](figures/milo_Reg_4wpa_Osteosarcoma_vs_Uninjured_Mesenchymal_ratio_histogram.png?v=1)
+
