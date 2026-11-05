@@ -670,6 +670,16 @@ We used the following params:
 [CLick here to download base vs target candidate rescue genes and their enriched pathways](https://drive.google.com/drive/folders/1sQuAqvZTqhgiKIrPGNX8pws5cnX2atXz?usp=sharing)
 
 
+- If osteosarcoma in the regenerative state were reverting toward uninjured mesenchymal cells, we would expect a robust set of rescue genes and clear ORA pathways that normalize specifically in the regenerative condition.
+
+- Instead, we observed only a minimal list of unique genes because both tumor states share nearly identical dysregulated genes relative to baseline.
+
+- Without a distinct rescue gene set, ORA yields no meaningful pathways being restored by regeneration.
+
+- This lack of a unique rescue signature fails to support the hypothesis that regenerative cells revert toward the uninjured baseline, corroborating our Milo neighborhood findings.
+
+
+
 ## Milo cell state analysis 
 
 - Milo uses overlapping "neighborhoods" across the entire dataset to define fine-grained cell state structure that standard cell-type clustering can miss.
