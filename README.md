@@ -670,7 +670,7 @@ We used the following params:
 [CLick here to download base vs target candidate rescue genes and their enriched pathways](https://drive.google.com/drive/folders/1sQuAqvZTqhgiKIrPGNX8pws5cnX2atXz?usp=sharing)
 
 
-### Milo cell state analysis 
+## Milo cell state analysis 
 
 - Milo uses overlapping "neighborhoods" across the entire dataset to define fine-grained cell state structure that standard cell-type clustering can miss.
 - We compared the proportion of target cells versus uninjured mesenchymal cells in each neighborhood to see how their local microenvironments differ between conditions.
