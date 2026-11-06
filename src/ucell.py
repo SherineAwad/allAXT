@@ -62,26 +62,28 @@ def main():
     print(f"Loading AnnData from {args.input}...")
     adata = sc.read_h5ad(args.input)
 
-    # Convert metadata columns to string to prevent category filtering mismatches
+    # Robust metadata cleaning: convert to string and strip whitespace
     if "celltype" in adata.obs.columns:
-        adata.obs["celltype"] = adata.obs["celltype"].astype(str)
+        adata.obs["celltype"] = adata.obs["celltype"].astype(str).str.strip()
     if "sample" in adata.obs.columns:
-        adata.obs["sample"] = adata.obs["sample"].astype(str)
+        adata.obs["sample"] = adata.obs["sample"].astype(str).str.strip()
 
-    # Ensure adata.X is writable to prevent read-only numpy array errors during UCell ranking
+    # Diagnostic prints to verify what is actually inside your .h5ad file
+    unique_celltypes = adata.obs['celltype'].unique().tolist() if "celltype" in adata.obs.columns else []
+    unique_samples = adata.obs['sample'].unique().tolist() if "sample" in adata.obs.columns else []
+    print(f"-> Available unique celltypes in adata.obs['celltype']: {unique_celltypes}")
+    print(f"-> Available unique samples in adata.obs['sample']: {unique_samples}")
+
     if not isinstance(adata.X, np.ndarray):
         adata.X = adata.X.toarray()
     adata.X = np.array(adata.X, dtype=np.float32)
 
-    # --- SAFETY CHECK: warn if data appears to be batch-corrected / scaled ---
     if np.any(adata.X < 0):
         print(
             "WARNING: adata.X contains negative values. UCell scores should be computed "
             "on raw or size-factor-normalized (non-negative) expression data."
         )
-    # ---------------------------------------------------------------------
 
-    # Verify required metadata columns exist
     if "celltype" not in adata.obs.columns or "sample" not in adata.obs.columns:
         raise KeyError("AnnData .obs must contain 'celltype' and 'sample' columns.")
 
@@ -109,7 +111,6 @@ def main():
 
     print(f"Matched {len(valid_genes)} valid genes present in AnnData.")
 
-    # Calculate max_rank from the data
     if not isinstance(adata.X, np.ndarray):
         adata.X = adata.X.toarray()
     n_detected = (adata.X > 0).sum(axis=1)
@@ -131,12 +132,10 @@ def main():
 
     score_col = "Custom_Signature_UCell"
 
-    # Fixed scale bounds
     global_vmin = args.vmin
     global_vmax = args.vmax
     print(f"Using fixed UCell score scale for all plots: [{global_vmin}, {global_vmax}]")
 
-    # Export all cell metadata with scores to CSV
     out_csv = f"{args.prefix}_all_cells_ucell_scores.csv"
     adata.obs[["celltype", "sample", score_col]].to_csv(out_csv)
     print(f"Saved full score table to {out_csv}")
@@ -149,7 +148,7 @@ def main():
             if line and not line.startswith("#"):
                 parts = line.split()
                 if len(parts) >= 2:
-                    comparisons.append((parts[0], parts[1]))
+                    comparisons.append((parts[0].strip(), parts[1].strip()))
 
     print(f"Loaded {len(comparisons)} comparisons to process.")
 
@@ -161,24 +160,28 @@ def main():
         print(f"Processing comparison {idx+1}: celltype='{celltype}', sample='{sample}'")
         
         subset_adata = adata[(adata.obs["celltype"] == celltype) & (adata.obs["sample"] == sample)].copy()
+        print(f"-> Found {subset_adata.n_obs} cells matching celltype='{celltype}' and sample='{sample}'")
 
         if subset_adata.n_obs == 0:
-            print(f"Warning: No cells matched celltype='{celltype}' and sample='{sample}'. Skipping.")
-        else:
-            valid_comparisons.append((celltype, sample, subset_adata))
+            raise ValueError(
+                f"ERROR: 0 cells found for celltype='{celltype}' and sample='{sample}'. "
+                f"Check your comparisons file against your AnnData metadata. "
+                f"Available celltypes: {unique_celltypes}, Available samples: {unique_samples}"
+            )
+        
+        valid_comparisons.append((celltype, sample, subset_adata))
 
-            # Collect data for the unified violin plot
-            label = f"{celltype}\n({sample})"
-            obs_copy = subset_adata.obs.copy()
-            obs_copy["comparison_label"] = label
-            combined_plot_data.append(obs_copy)
-            if label not in comparison_labels_order:
-                comparison_labels_order.append(label)
+        label = f"{celltype}\n({sample})"
+        obs_copy = subset_adata.obs.copy()
+        obs_copy["comparison_label"] = label
+        combined_plot_data.append(obs_copy)
+        if label not in comparison_labels_order:
+            comparison_labels_order.append(label)
 
-    # Generate ONE multi-panel feature plot grid combining all comparisons
+    # Generate multi-panel feature plot grid
     if valid_comparisons:
         n_plots = len(valid_comparisons)
-        ncols = min(3, n_plots)  # Max 3 columns per row
+        ncols = min(3, n_plots)
         nrows = (n_plots + ncols - 1) // ncols
         
         fig, axes = plt.subplots(nrows, ncols, figsize=(ncols * 5, nrows * 4), squeeze=False)
@@ -197,7 +200,6 @@ def main():
             )
             ax.set_title(f"{celltype} | {sample}", fontsize=10, fontweight="bold")
 
-        # Hide any unused subplots if the grid has empty slots
         for j in range(len(valid_comparisons), len(axes_flat)):
             fig.delaxes(axes_flat[j])
 
@@ -209,7 +211,7 @@ def main():
         plt.close()
         print(f"Saved multi-panel feature plot to {out_umap}")
 
-    # Generate ONE unified violin plot combining all loaded comparisons side-by-side
+    # Generate unified violin plot
     if combined_plot_data:
         unified_df = pd.concat(combined_plot_data)
         unified_df["comparison_label"] = pd.Categorical(
@@ -232,7 +234,6 @@ def main():
         plt.ylabel("UCell Signature Score", fontsize=10)
         plt.xticks(rotation=45, ha="right")
         
-        # Apply the same fixed y-axis range
         plt.ylim(global_vmin, global_vmax)
         plt.tight_layout()
 
@@ -240,8 +241,6 @@ def main():
         plt.savefig(out_violin, dpi=300, bbox_inches="tight")
         plt.close()
         print(f"Saved unified violin plot to {out_violin}")
-    else:
-        print("Warning: No matching cells found across any of the specified comparisons. Unified violin plot skipped.")
 
 if __name__ == "__main__":
     main()
