@@ -748,4 +748,8 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 <img src="figures/ucell_Osteoblast_diff_featureplot.png?v=1" width="48%" /><img src="figures/ucell_Osteoblast_diff_violin.png?v=1" width="48%" />
 
 
+### Appendage 
+
+<img src="figures/ucell_appendage_featureplot.png?v=1" width="48%" /><img src="figures/ucell_appendage_violin.png?v=1" width="48%" />
+
 
