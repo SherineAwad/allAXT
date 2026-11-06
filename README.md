@@ -721,35 +721,33 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 
 ### Blastema 1
 
-<img src="figures/ucell_blastema1_featureplot.png?v=1" width="48%" /><img src="figures/ucell_blastema1_violin.png?v=1" width="48%" />
+<img src="figures/ucell_blastema1_featureplot.png?v=3" width="48%" /><img src="figures/ucell_blastema1_violin.png?v=3" width="48%" />
 
 ### Blastema 2
 
-<img src="figures/ucell_blastema2_featureplot.png?v=1" width="48%" /><img src="figures/ucell_blastema2_violin.png?v=1" width="48%" />
+<img src="figures/ucell_blastema2_featureplot.png?v=3" width="48%" /><img src="figures/ucell_blastema2_violin.png?v=3" width="48%" />
 
 ### Collagen
 
-<img src="figures/ucell_collagen_featureplot.png?v=1" width="48%" /><img src="figures/ucell_collagen_violin.png?v=1" width="48%" />
+<img src="figures/ucell_collagen_featureplot.png?v=3" width="48%" /><img src="figures/ucell_collagen_violin.png?v=3" width="48%" />
 
 ### DNA Replication
 
-<img src="figures/ucell_DNA_replication_featureplot.png?v=1" width="48%" /><img src="figures/ucell_DNA_replication_violin.png?v=1" width="48%" />
+<img src="figures/ucell_DNA_replication_featureplot.png?v=3" width="48%" /><img src="figures/ucell_DNA_replication_violin.png?v=3" width="48%" />
 
 ### Response to BMP
 
-<img src="figures/ucell_Response_to_BMP_featureplot.png?v=1" width="48%" /><img src="figures/ucell_Response_to_BMP_violin.png?v=1" width="48%" />
+<img src="figures/ucell_Response_to_BMP_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Response_to_BMP_violin.png?v=3" width="48%" />
 
 ### Oxidative
 
-<img src="figures/ucell_oxidative_featureplot.png?v=1" width="48%" /><img src="figures/ucell_oxidative_violin.png?v=1" width="48%" />
+<img src="figures/ucell_oxidative_featureplot.png?v=3" width="48%" /><img src="figures/ucell_oxidative_violin.png?v=3" width="48%" />
 
 ### Osteoblast Differentiation
 
-<img src="figures/ucell_Osteoblast_diff_featureplot.png?v=1" width="48%" /><img src="figures/ucell_Osteoblast_diff_violin.png?v=1" width="48%" />
+<img src="figures/ucell_Osteoblast_diff_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteoblast_diff_violin.png?v=3" width="48%" />
 
+### Appendage
 
-### Appendage 
-
-<img src="figures/ucell_appendage_featureplot.png?v=1" width="48%" /><img src="figures/ucell_appendage_violin.png?v=1" width="48%" />
-
+<img src="figures/ucell_appendage_featureplot.png?v=3" width="48%" /><img src="figures/ucell_appendage_violin.png?v=3" width="48%" />
 
