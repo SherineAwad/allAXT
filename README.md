@@ -15,15 +15,15 @@ Below are the QC plots showing the distribution of cell-quality metrics before a
 
 #### GSE135985
 
-<img src="figures/violin_GSE135985_preQC.png?v=3" width="48%"> <img src="figures/violin_GSE135985_AfterQC.png?v=3" width="48%">
+<img src="figures/violin_GSE135985_preQC.png?v=4" width="48%"> <img src="figures/violin_GSE135985_AfterQC.png?v=4" width="48%">
 
 #### AXT
 
-<img src="figures/violin_AXT_preQC.png?v=3" width="48%"> <img src="figures/violin_AXT_AfterQC.png?v=3" width="48%">
+<img src="figures/violin_AXT_preQC.png?v=4" width="48%"> <img src="figures/violin_AXT_AfterQC.png?v=4" width="48%">
 
 #### SLX-28276
 
-<img src="figures/violin_SLX-28276_preQC.png?v=3" width="48%"> <img src="figures/violin_SLX-28276_AfterQC.png?v=3" width="48%">
+<img src="figures/violin_SLX-28276_preQC.png?v=4" width="48%"> <img src="figures/violin_SLX-28276_AfterQC.png?v=4" width="48%">
 
 
 ## Doublet detection
@@ -48,7 +48,7 @@ Dataset-specific parameters were:
 
 Cells identified as doublets using these criteria were excluded from the datasets used for subsequent single-cell analysis.
 
-<img src="figures/AXT_scrublet_scores.png?v=3" width="32%"> <img src="figures/GSE135985_scrublet_scores.png?v=3" width="32%"> <img src="figures/SLX-28276_scrublet_scores.png?v=3" width="32%">
+<img src="figures/AXT_scrublet_scores.png?v=4" width="32%"> <img src="figures/GSE135985_scrublet_scores.png?v=4" width="32%"> <img src="figures/SLX-28276_scrublet_scores.png?v=4" width="32%">
 
 | Dataset | Cells Before | Predicted Doublets | Predicted Doublet Rate | Cells After |
 |---|---:|---:|---:|---:|
@@ -106,16 +106,16 @@ The 30-dimensional PCA representation was then used to construct a cell-to-cell 
 The resulting dataset was saved for downstream single-cell analysis.
 
 
-![](figures/umap_allAXT_umap.png?v=3) 
+![](figures/umap_allAXT_umap.png?v=4) 
 
 #### Per sample 
-<img src="figures/umap_allAXT_Uninjured1.png?v=3" width="48%"> <img src="figures/umap_allAXT_Uninjured2.png?v=3" width="48%">
+<img src="figures/umap_allAXT_Uninjured1.png?v=4" width="48%"> <img src="figures/umap_allAXT_Uninjured2.png?v=4" width="48%">
 
-<img src="figures/umap_allAXT_nonReg_4wpa.png?v=3" width="48%"> <img src="figures/umap_allAXT_Non_Regen_14_DPA.png?v=3" width="48%">
+<img src="figures/umap_allAXT_nonReg_4wpa.png?v=4" width="48%"> <img src="figures/umap_allAXT_Non_Regen_14_DPA.png?v=4" width="48%">
 
-<img src="figures/umap_allAXT_nonReg.png?v=3" width="48%"> <img src="figures/umap_allAXT_Reg.png?v=3" width="48%">
+<img src="figures/umap_allAXT_nonReg.png?v=4" width="48%"> <img src="figures/umap_allAXT_Reg.png?v=4" width="48%">
 
-<img src="figures/umap_allAXT_Reg_4wpa.png?v=3" width="48%"> <img src="figures/umap_allAXT_Regen_14_DPA.png?v=3" width="48%">
+<img src="figures/umap_allAXT_Reg_4wpa.png?v=4" width="48%"> <img src="figures/umap_allAXT_Regen_14_DPA.png?v=4" width="48%">
 
 
 ## Batch correction using Harmony
@@ -129,17 +129,17 @@ The resulting UMAP was visualised by sample to assess the distribution of cells 
 The Harmony-corrected dataset was saved for subsequent single-cell analysis.
 
  
-![](figures/umap_allAXT_harmony_sample.png?v=3)
+![](figures/umap_allAXT_harmony_sample.png?v=4)
 
 #### Per sample: 
 
-<img src="figures/umap_allAXT_harmony_Reg_4wpa.png?v=3" width="48%"> <img src="figures/umap_allAXT_harmony_nonReg_4wpa.png?v=3" width="48%">
+<img src="figures/umap_allAXT_harmony_Reg_4wpa.png?v=4" width="48%"> <img src="figures/umap_allAXT_harmony_nonReg_4wpa.png?v=4" width="48%">
 
-<img src="figures/umap_allAXT_harmony_Reg.png?v=3" width="48%"> <img src="figures/umap_allAXT_harmony_nonReg.png?v=3" width="48%">
+<img src="figures/umap_allAXT_harmony_Reg.png?v=4" width="48%"> <img src="figures/umap_allAXT_harmony_nonReg.png?v=4" width="48%">
 
-<img src="figures/umap_allAXT_harmony_Non_Regen_14_DPA.png?v=3" width="48%"> <img src="figures/umap_allAXT_harmony_Regen_14_DPA.png?v=3" width="48%">
+<img src="figures/umap_allAXT_harmony_Non_Regen_14_DPA.png?v=4" width="48%"> <img src="figures/umap_allAXT_harmony_Regen_14_DPA.png?v=4" width="48%">
 
-<img src="figures/umap_allAXT_harmony_Uninjured1.png?v=3" width="48%"> <img src="figures/umap_allAXT_harmony_Uninjured2.png?v=3" width="48%">
+<img src="figures/umap_allAXT_harmony_Uninjured1.png?v=4" width="48%"> <img src="figures/umap_allAXT_harmony_Uninjured2.png?v=4" width="48%">
 
 ## Clustering
 
@@ -151,10 +151,10 @@ The resulting clusters were visualised on the UMAP embedding, with cluster ident
 
 To assess whether clustering was associated with differences in cell quality, the distributions of **detected genes, total RNA counts, and mitochondrial RNA percentage** were also examined across clusters.
 
-![](figures/umap_allAXT_leiden.png?v=3)
+![](figures/umap_allAXT_leiden.png?v=4)
 
 #### Quality per cluster 
-<img src="figures/violin_allAXT_QC_n_genes_by_counts.png?v=3" width="32%"> <img src="figures/violin_allAXT_QC_total_counts.png?v=3" width="32%"> <img src="figures/violin_allAXT_QC_pct_counts_mt.png?v=3" width="32%">
+<img src="figures/violin_allAXT_QC_n_genes_by_counts.png?v=4" width="32%"> <img src="figures/violin_allAXT_QC_total_counts.png?v=4" width="32%"> <img src="figures/violin_allAXT_QC_pct_counts_mt.png?v=4" width="32%">
 
 
 
@@ -189,92 +189,92 @@ marker_genes = {
 ![](figures/dotplot__allAXT_dotplot.png?v=1)
 
 
-<img src="figures/umap_allAXT_Matn1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Oscar.png?v=3" width="32%"> <img src="figures/umap_allAXT_Pi16.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Matn1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Oscar.png?v=4" width="32%"> <img src="figures/umap_allAXT_Pi16.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Epcam.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ngfr.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cdh5.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Epcam.png?v=4" width="32%"> <img src="figures/umap_allAXT_Ngfr.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cdh5.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Ighm.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd22.png?v=3" width="32%"> <img src="figures/umap_allAXT_Scnn1a.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Ighm.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd22.png?v=4" width="32%"> <img src="figures/umap_allAXT_Scnn1a.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Lgr6.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cilp2.png?v=3" width="32%"> <img src="figures/umap_allAXT_Dsg3.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Lgr6.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cilp2.png?v=4" width="32%"> <img src="figures/umap_allAXT_Dsg3.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Krt14.png?v=3" width="32%"> <img src="figures/umap_allAXT_Rspo3.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd68.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Krt14.png?v=4" width="32%"> <img src="figures/umap_allAXT_Rspo3.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd68.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Ibsp.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ly6g.png?v=3" width="32%"> <img src="figures/umap_allAXT_Krt18.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Ibsp.png?v=4" width="32%"> <img src="figures/umap_allAXT_Ly6g.png?v=4" width="32%"> <img src="figures/umap_allAXT_Krt18.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Col1a1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Dcstamp.png?v=3" width="32%"> <img src="figures/umap_allAXT_Foxa1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Col1a1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Dcstamp.png?v=4" width="32%"> <img src="figures/umap_allAXT_Foxa1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Pdgfrb.png?v=3" width="32%"> <img src="figures/umap_allAXT_Col23a1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Pmp22.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Pdgfrb.png?v=4" width="32%"> <img src="figures/umap_allAXT_Col23a1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Pmp22.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Krt7.png?v=3" width="32%"> <img src="figures/umap_allAXT_Flt1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cxcl12.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Krt7.png?v=4" width="32%"> <img src="figures/umap_allAXT_Flt1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cxcl12.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_S100b.png?v=3" width="32%"> <img src="figures/umap_allAXT_Dmp1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cpa3.png?v=3" width="32%">
+<img src="figures/umap_allAXT_S100b.png?v=4" width="32%"> <img src="figures/umap_allAXT_Dmp1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cpa3.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Krt8.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd163.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cspg4.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Krt8.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd163.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cspg4.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Ctsk.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd200r3.png?v=3" width="32%"> <img src="figures/umap_allAXT_Nfatc1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Ctsk.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd200r3.png?v=4" width="32%"> <img src="figures/umap_allAXT_Nfatc1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Plp1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd3e.png?v=3" width="32%"> <img src="figures/umap_allAXT_Pecam1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Plp1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd3e.png?v=4" width="32%"> <img src="figures/umap_allAXT_Pecam1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Pdpn.png?v=3" width="32%"> <img src="figures/umap_allAXT_Kcnj8.png?v=3" width="32%"> <img src="figures/umap_allAXT_Mrc1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Pdpn.png?v=4" width="32%"> <img src="figures/umap_allAXT_Kcnj8.png?v=4" width="32%"> <img src="figures/umap_allAXT_Mrc1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Pdgfra.png?v=3" width="32%"> <img src="figures/umap_allAXT_Krt5.png?v=3" width="32%"> <img src="figures/umap_allAXT_Kdr.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Pdgfra.png?v=4" width="32%"> <img src="figures/umap_allAXT_Krt5.png?v=4" width="32%"> <img src="figures/umap_allAXT_Kdr.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Krt19.png?v=3" width="32%"> <img src="figures/umap_allAXT_Flt4.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd3d.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Krt19.png?v=4" width="32%"> <img src="figures/umap_allAXT_Flt4.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd3d.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Abcc9.png?v=3" width="32%"> <img src="figures/umap_allAXT_Frzb.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ccr3.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Abcc9.png?v=4" width="32%"> <img src="figures/umap_allAXT_Frzb.png?v=4" width="32%"> <img src="figures/umap_allAXT_Ccr3.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_EGFP.png?v=3" width="32%"> <img src="figures/umap_allAXT_Hdc.png?v=3" width="32%"> <img src="figures/umap_allAXT_S100a9.png?v=3" width="32%">
+<img src="figures/umap_allAXT_EGFP.png?v=4" width="32%"> <img src="figures/umap_allAXT_Hdc.png?v=4" width="32%"> <img src="figures/umap_allAXT_S100a9.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Acp5.png?v=3" width="32%"> <img src="figures/umap_allAXT_Scnn1b.png?v=3" width="32%"> <img src="figures/umap_allAXT_Lyve1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Acp5.png?v=4" width="32%"> <img src="figures/umap_allAXT_Scnn1b.png?v=4" width="32%"> <img src="figures/umap_allAXT_Lyve1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Erg.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ucma.png?v=3" width="32%"> <img src="figures/umap_allAXT_Adgre1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Erg.png?v=4" width="32%"> <img src="figures/umap_allAXT_Ucma.png?v=4" width="32%"> <img src="figures/umap_allAXT_Adgre1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Emcn.png?v=3" width="32%"> <img src="figures/umap_allAXT_Calcr.png?v=3" width="32%"> <img src="figures/umap_allAXT_Pax5.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Emcn.png?v=4" width="32%"> <img src="figures/umap_allAXT_Calcr.png?v=4" width="32%"> <img src="figures/umap_allAXT_Pax5.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Sox9.png?v=3" width="32%"> <img src="figures/umap_allAXT_Tnfrsf11a.png?v=3" width="32%"> <img src="figures/umap_allAXT_Sp6.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Sox9.png?v=4" width="32%"> <img src="figures/umap_allAXT_Tnfrsf11a.png?v=4" width="32%"> <img src="figures/umap_allAXT_Sp6.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Prox1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd8a.png?v=3" width="32%"> <img src="figures/umap_allAXT_S100a8.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Prox1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd8a.png?v=4" width="32%"> <img src="figures/umap_allAXT_S100a8.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Tpsab1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Runx2.png?v=3" width="32%"> <img src="figures/umap_allAXT_Alpl.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Tpsab1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Runx2.png?v=4" width="32%"> <img src="figures/umap_allAXT_Alpl.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Cd34.png?v=3" width="32%"> <img src="figures/umap_allAXT_Spp1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Myh11.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Cd34.png?v=4" width="32%"> <img src="figures/umap_allAXT_Spp1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Myh11.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Des.png?v=3" width="32%"> <img src="figures/umap_allAXT_Sp8.png?v=3" width="32%"> <img src="figures/umap_allAXT_Scnn1g.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Des.png?v=4" width="32%"> <img src="figures/umap_allAXT_Sp8.png?v=4" width="32%"> <img src="figures/umap_allAXT_Scnn1g.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Cdh1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Sp7.png?v=3" width="32%"> <img src="figures/umap_allAXT_Mcpt8.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Cdh1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Sp7.png?v=4" width="32%"> <img src="figures/umap_allAXT_Mcpt8.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Mbp.png?v=3" width="32%"> <img src="figures/umap_allAXT_Bglap.png?v=3" width="32%"> <img src="figures/umap_allAXT_Postn.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Mbp.png?v=4" width="32%"> <img src="figures/umap_allAXT_Bglap.png?v=4" width="32%"> <img src="figures/umap_allAXT_Postn.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Prg4.png?v=3" width="32%"> <img src="figures/umap_allAXT_Lepr.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ms4a2.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Prg4.png?v=4" width="32%"> <img src="figures/umap_allAXT_Lepr.png?v=4" width="32%"> <img src="figures/umap_allAXT_Ms4a2.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Acan.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd44.png?v=3" width="32%"> <img src="figures/umap_allAXT_Csf1r.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Acan.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd44.png?v=4" width="32%"> <img src="figures/umap_allAXT_Csf1r.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Dcn.png?v=3" width="32%"> <img src="figures/umap_allAXT_Krt17.png?v=3" width="32%"> <img src="figures/umap_allAXT_Aqp5.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Dcn.png?v=4" width="32%"> <img src="figures/umap_allAXT_Krt17.png?v=4" width="32%"> <img src="figures/umap_allAXT_Aqp5.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Cd28.png?v=3" width="32%"> <img src="figures/umap_allAXT_Col2a1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd4.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Cd28.png?v=4" width="32%"> <img src="figures/umap_allAXT_Col2a1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd4.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Cnn1.png?v=3" width="32%"> <img src="figures/umap_allAXT_Acta2.png?v=3" width="32%"> <img src="figures/umap_allAXT_Cd79a.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Cnn1.png?v=4" width="32%"> <img src="figures/umap_allAXT_Acta2.png?v=4" width="32%"> <img src="figures/umap_allAXT_Cd79a.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Mmp13.png?v=3" width="32%"> <img src="figures/umap_allAXT_Gdf5.png?v=3" width="32%"> <img src="figures/umap_allAXT_Sox10.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Mmp13.png?v=4" width="32%"> <img src="figures/umap_allAXT_Gdf5.png?v=4" width="32%"> <img src="figures/umap_allAXT_Sox10.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Comp.png?v=3" width="32%"> <img src="figures/umap_allAXT_Mpo.png?v=3" width="32%"> <img src="figures/umap_allAXT_Kit.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Comp.png?v=4" width="32%"> <img src="figures/umap_allAXT_Mpo.png?v=4" width="32%"> <img src="figures/umap_allAXT_Kit.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Hpgds.png?v=3" width="32%"> <img src="figures/umap_allAXT_Nes.png?v=3" width="32%"> <img src="figures/umap_allAXT_Col9a1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Hpgds.png?v=4" width="32%"> <img src="figures/umap_allAXT_Nes.png?v=4" width="32%"> <img src="figures/umap_allAXT_Col9a1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Tagln.png?v=3" width="32%"> <img src="figures/umap_allAXT_Vwf.png?v=3" width="32%"> <img src="figures/umap_allAXT_Plvap.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Tagln.png?v=4" width="32%"> <img src="figures/umap_allAXT_Vwf.png?v=4" width="32%"> <img src="figures/umap_allAXT_Plvap.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Csf3r.png?v=3" width="32%"> <img src="figures/umap_allAXT_Tpsb2.png?v=3" width="32%"> <img src="figures/umap_allAXT_Ms4a1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Csf3r.png?v=4" width="32%"> <img src="figures/umap_allAXT_Tpsb2.png?v=4" width="32%"> <img src="figures/umap_allAXT_Ms4a1.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Cd19.png?v=3" width="32%"> <img src="figures/umap_allAXT_Esam.png?v=3" width="32%"> <img src="figures/umap_allAXT_Rgs5.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Cd19.png?v=4" width="32%"> <img src="figures/umap_allAXT_Esam.png?v=4" width="32%"> <img src="figures/umap_allAXT_Rgs5.png?v=4" width="32%">
 
-<img src="figures/umap_allAXT_Prrx1.png?v=3" width="32%">
+<img src="figures/umap_allAXT_Prrx1.png?v=4" width="32%">
 
 
 ## Annotations 
 
-![](figures/umap_allAXT_celltype.png?v=3)
+![](figures/umap_allAXT_celltype.png?v=4)
 
-![](figures/umap_allAXT_celltypeON.png?v=3)
+![](figures/umap_allAXT_celltypeON.png?v=4)
 
 
 ## Cell ratios 
@@ -721,39 +721,39 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 ### Osteosarcoma 
 
 #### Blastema 1
-<img src="figures/ucell_Osteo_blastema1_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_blastema1_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_blastema1_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_blastema1_violin.png?v=4" width="48%" />
 #### Blastema 2
-<img src="figures/ucell_Osteo_blastema2_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_blastema2_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_blastema2_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_blastema2_violin.png?v=4" width="48%" />
 #### Collagen
-<img src="figures/ucell_Osteo_collagen_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_collagen_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_collagen_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_collagen_violin.png?v=4" width="48%" />
 #### DNA Replication
-<img src="figures/ucell_Osteo_DNA_replication_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_DNA_replication_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_DNA_replication_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_DNA_replication_violin.png?v=4" width="48%" />
 #### Response to BMP
-<img src="figures/ucell_Osteo_Response_to_BMP_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_Response_to_BMP_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_Response_to_BMP_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_Response_to_BMP_violin.png?v=4" width="48%" />
 #### Oxidative
-<img src="figures/ucell_Osteo_oxidative_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_oxidative_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_oxidative_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_oxidative_violin.png?v=4" width="48%" />
 #### Osteoblast Differentiation
-<img src="figures/ucell_Osteo_Osteoblast_diff_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_Osteoblast_diff_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_Osteoblast_diff_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_Osteoblast_diff_violin.png?v=4" width="48%" />
 #### Appendage
-<img src="figures/ucell_Osteo_appendage_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Osteo_appendage_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Osteo_appendage_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Osteo_appendage_violin.png?v=4" width="48%" />
 
 
 ### Mesenchymal
 
 #### Blastema 1
-<img src="figures/ucell_Mesen_blastema1_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_blastema1_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_blastema1_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_blastema1_violin.png?v=4" width="48%" />
 #### Blastema 2
-<img src="figures/ucell_Mesen_blastema2_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_blastema2_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_blastema2_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_blastema2_violin.png?v=4" width="48%" />
 #### Collagen
-<img src="figures/ucell_Mesen_collagen_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_collagen_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_collagen_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_collagen_violin.png?v=4" width="48%" />
 #### DNA Replication
-<img src="figures/ucell_Mesen_DNA_replication_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_DNA_replication_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_DNA_replication_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_DNA_replication_violin.png?v=4" width="48%" />
 #### Response to BMP
-<img src="figures/ucell_Mesen_Response_to_BMP_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_Response_to_BMP_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_Response_to_BMP_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_Response_to_BMP_violin.png?v=4" width="48%" />
 #### Oxidative
-<img src="figures/ucell_Mesen_oxidative_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_oxidative_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_oxidative_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_oxidative_violin.png?v=4" width="48%" />
 #### Osteoblast Differentiation
-<img src="figures/ucell_Mesen_Osteoblast_diff_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_Osteoblast_diff_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_Osteoblast_diff_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_Osteoblast_diff_violin.png?v=4" width="48%" />
 #### Appendage
-<img src="figures/ucell_Mesen_appendage_featureplot.png?v=3" width="48%" /><img src="figures/ucell_Mesen_appendage_violin.png?v=3" width="48%" />
+<img src="figures/ucell_Mesen_appendage_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_appendage_violin.png?v=4" width="48%" />
 

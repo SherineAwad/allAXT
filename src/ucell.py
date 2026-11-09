@@ -49,7 +49,7 @@ def parse_arguments():
     parser.add_argument(
         "--vmax",
         type=float,
-        default=1.0,
+        default=0.5,
         help="Fixed maximum value for UCell plot scales (default: 1.0).",
     )
     return parser.parse_args()
