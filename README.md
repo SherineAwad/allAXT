@@ -782,4 +782,10 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 
 
 
+### Trajectory with Osteosarcoma as a root 
+
+<img src="figures/osteo_palantir_root_Osteosarcoma.png?v=1" width="48%" /><img src="figures/Osteosarcoma_umap.png?v=1" width="48%" />
+
+‼️ Trajectory Analysis Note:
+Global UMAP embedding and Palantir trajectory analysis of the complete dataset show a visual bridge connecting the Osteosarcoma population to the Mesenchymal compartment. However, when Osteosarcoma cells are subset and reclustered independently, the cells occupying this boundary fail to resolve into a distinct transitional state and instead integrate back into the primary Osteosarcoma cluster. This indicates that the apparent bridge is an artifact of the global $k$-nearest neighbor (KNN) graph structure, where proximity to adjacent stromal cell types artificially pulls boundary Osteosarcoma cells toward the Mesenchymal cluster. Consequently, while the global embedding accurately reflects overall tissue landscape topology, it does not represent a robust, intrinsic lineage transition between the Osteosarcoma and Mesenchymal compartments. 
 
