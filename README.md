@@ -757,3 +757,29 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 #### Appendage
 <img src="figures/ucell_Mesen_appendage_featureplot.png?v=4" width="48%" /><img src="figures/ucell_Mesen_appendage_violin.png?v=4" width="48%" />
 
+
+### EGFP Differential Expression & UCell Projection
+- We separated EGFP-positive and EGFP-negative cells within each annotated cell type and performed differential gene expression (DGE) analysis to identify the transcriptional changes driven by EGFP status. Using the top significant DGE hits from Osteosarcoma (excluding the EGFP transgene and technical noise), we generated a UCell gene signature and projected it across all cell types. This allows us to visualize whether the EGFP-associated transcriptional program in Osteosarcoma is shared by other cells in the tumor microenvironment or remains tumor-intrinsic.
+
+
+<img src="figures/Osteosarcoma_EGFP_DGE_umap.png?v=2" width="32%" /><img src="figures/Mesenchymal_EGFP_DGE_umap.png?v=2" width="32%" /><img src="figures/Endothelial_EGFP_DGE_umap.png?v=2" width="32%" />
+
+<img src="figures/Lymphatic_Endothelial_EGFP_umap.png?v=2" width="32%" /><img src="figures/Pericyte_MSC_EGFP_umap.png?v=2" width="32%" /><img src="figures/Neutrophil_EGFP_umap.png?v=2" width="32%" />
+
+<img src="figures/Keratinocyte_EGFP_umap.png?v=2" width="32%" /><img src="figures/Schwann_EGFP_umap.png?v=2" width="32%" /><img src="figures/BCells_EGFP_umap.png?v=2" width="32%" />
+
+<img src="figures/TCells_EGFP_umap.png?v=2" width="32%" /><img src="figures/MastCells_EGFP_DGE_umap.png?v=2" width="32%" />
+
+### We repeat the above using Cdkn2a gene
+
+<img src="figures/Osteosarcoma_Cdkn2a_DGE_umap.png?v=2" width="32%" /><img src="figures/Mesenchymal_Cdkn2a_DGE_umap.png?v=2" width="32%" /><img src="figures/Endothelial_Cdkn2a_DGE_umap.png?v=2" width="32%" />
+
+<img src="figures/Lymphatic_Endothelial_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/Pericyte_MSC_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/Neutrophil_Cdkn2a_umap.png?v=2" width="32%" />
+
+<img src="figures/Keratinocyte_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/Schwann_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/BCells_Cdkn2a_umap.png?v=2" width="32%" />
+
+<img src="figures/TCells_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/MastCells_Cdkn2a_DGE_umap.png?v=2" width="32%" />
+
+
+
+
