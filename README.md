@@ -768,7 +768,7 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 
 <img src="figures/Keratinocyte_EGFP_umap.png?v=2" width="32%" /><img src="figures/Schwann_EGFP_umap.png?v=2" width="32%" /><img src="figures/BCells_EGFP_umap.png?v=2" width="32%" />
 
-<img src="figures/TCells_EGFP_umap.png?v=2" width="32%" /><img src="figures/MastCells_EGFP_umap.png?v=2" width="32%" />
+<img src="figures/TCells_EGFP_umap.png?v=2" width="32%" /><img src="figures/Mast_Cells_EGFP_umap.png" width="32%" />
 
 ### We repeat the above using Cdkn2a gene
 
@@ -778,7 +778,7 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 
 <img src="figures/Keratinocyte_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/Schwann_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/BCells_Cdkn2a_umap.png?v=2" width="32%" />
 
-<img src="figures/TCells_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/MastCells_Cdkn2a_umap.png?v=2" width="32%" />
+<img src="figures/TCells_Cdkn2a_umap.png?v=2" width="32%" /><img src="figures/Mast_Cells_Cdkn2a_umap.png?v=2" width="32%" />
 
 
 
