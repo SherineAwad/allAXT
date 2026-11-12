@@ -789,3 +789,18 @@ Instead of looking at Gene A or Gene B individually, UCell takes your whole gene
 ‼️ Trajectory Analysis Note:
 Global UMAP embedding and Palantir trajectory analysis of the complete dataset show a visual bridge connecting the Osteosarcoma population to the Mesenchymal compartment. However, when Osteosarcoma cells are subset and reclustered independently, the cells occupying this boundary fail to resolve into a distinct transitional state and instead integrate back into the primary Osteosarcoma cluster. This indicates that the apparent bridge is an artifact of the global $k$-nearest neighbor (KNN) graph structure, where proximity to adjacent stromal cell types artificially pulls boundary Osteosarcoma cells toward the Mesenchymal cluster. Consequently, while the global embedding accurately reflects overall tissue landscape topology, it does not represent a robust, intrinsic lineage transition between the Osteosarcoma and Mesenchymal compartments. 
 
+
+### CNV Inference
+
+**Copy Number Variation (CNV)** is a gain or loss of a DNA segment compared with the normal copy number (usually two copies in diploid cells).
+
+**How we detect CNVs from scRNA-seq:** Since scRNA-seq measures gene expression rather than DNA directly, tools such as inferCNV look for coordinated increases or decreases in the expression of multiple neighbouring genes along the same chromosome, relative to reference cells. These patterns may indicate DNA amplification or deletion.
+
+**Why is it an inference?** Because increased expression does not necessarily mean extra DNA copies; neighbor genes can also be transcriptionally upregulated without any change in DNA copy number. Therefore, scRNA-seq identifies *candidate CNV regions*, which require DNA-based methods for confirmation.
+
+
+**Reference selection for inferCNV:** All cell types from the Uninjured samples were initially used as the reference population. A reference is needed to establish baseline gene expression levels, allowing inferCNV to identify coordinated increases or decreases across neighbouring genes that may indicate chromosomal gains or losses. Since Uninjured samples represent the baseline condition and do not contain Osteosarcoma cells, they provide a starting point for estimating normal chromosomal expression patterns. Cell types from the other conditions (Reg, non-Reg, Reg 14 DPA, non-Reg 14 DPA, etc.) were then compared against this reference to identify expression patterns potentially indicative of CNVs.
+
+![](figures/allAXT_CNV_Heatmap.png?v=1)
+![](figures/allAXT_CNV_Score_Violin.png?v=1)
+
