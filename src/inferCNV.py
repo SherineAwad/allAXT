@@ -193,6 +193,11 @@ def annotate_genes(adata, prefix):
     adata.var["start"] = mapped["start"].to_numpy(dtype=np.int64)
     adata.var["end"] = mapped["end"].to_numpy(dtype=np.int64)
 
+    # Exclude mitochondrial genes (chrM / chrMT) from the analysis dataset
+    mito_genes = adata.var["chromosome"].isin(["chrM", "chrMT"])
+    if mito_genes.any():
+        adata = adata[:, ~mito_genes].copy()
+
     # Confirm that chromosome names meet infercnvpy requirements.
     chromosomes = adata.var["chromosome"].dropna().unique()
 
