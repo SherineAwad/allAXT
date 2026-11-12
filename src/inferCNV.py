@@ -19,6 +19,19 @@ def parse_args():
     )
     parser.add_argument("--input", required=True, help="Input AnnData h5ad file")
     parser.add_argument("--prefix", required=True, help="Output prefix")
+    parser.add_argument(
+        "--marker",
+        required=False,
+        default=None,
+        help="Optional marker gene to subset non-Uninjured cells (e.g., EGFP)"
+    )
+    parser.add_argument(
+        "--cutoff",
+        required=False,
+        type=float,
+        default=0.0,
+        help="Expression cutoff for the marker to consider a cell positive (default: 0.0)"
+    )
     return parser.parse_args()
 
 
@@ -251,18 +264,60 @@ def annotate_genes(adata, prefix):
     return adata
 
 
+def filter_by_marker(adata, marker=None, cutoff=0.0):
+    """
+    Filter non-Uninjured cells based on marker expression.
+    Keeps all Uninjured cells.
+    """
+    if marker is None:
+        return adata
+
+    print(f"Filtering non-Uninjured cells for {marker} > {cutoff}...")
+
+    if "sample" not in adata.obs.columns:
+        raise ValueError("Missing required adata.obs column: sample")
+
+    uninjured = adata.obs["sample"].astype(str) == "Uninjured"
+
+    # Check for marker in var_names
+    if marker in adata.var_names:
+        print(f"  Found marker '{marker}' in var_names.")
+        marker_expr = adata[:, marker].X
+        if sparse.issparse(marker_expr):
+            marker_expr = marker_expr.toarray().flatten()
+        else:
+            marker_expr = np.array(marker_expr).flatten()
+        marker_positive = marker_expr > cutoff
+        
+    # Check for marker in obs
+    elif marker in adata.obs.columns:
+        print(f"  Found marker '{marker}' in obs columns.")
+        marker_positive = adata.obs[marker].to_numpy() > cutoff
+        
+    else:
+        raise ValueError(
+            f"Marker '{marker}' not found in adata.var_names or adata.obs. "
+            f"Please check the exact spelling."
+        )
+
+    # Keep all Uninjured cells + marker positive cells from other samples
+    keep_mask = uninjured | marker_positive
+    adata = adata[keep_mask].copy()
+    
+    print(f"Cells kept after marker filtering: {adata.n_obs:,}")
+    
+    return adata
+
+
 def prepare_reference(adata):
     """
-    Use each Uninjured cell type as a separate reference population.
+    Use ALL Uninjured cells as a single, unified reference population.
     """
 
     print("Preparing Uninjured reference populations...")
 
     if "sample" not in adata.obs.columns:
         raise ValueError("Missing required adata.obs column: sample")
-
-    if "celltype" not in adata.obs.columns:
-        raise ValueError("Missing required adata.obs column: celltype")
 
     uninjured = adata.obs["sample"].astype(str) == "Uninjured"
 
@@ -271,42 +326,14 @@ def prepare_reference(adata):
 
     adata.obs["_cnv_reference_group"] = "non_reference"
 
-    reference_groups = (
-        adata.obs.loc[uninjured, "celltype"]
-        .astype(str)
-        .unique()
-    )
-
-    reference_categories = []
-
-    for celltype in sorted(reference_groups):
-
-        group_name = f"Uninjured::{celltype}"
-
-        mask = (
-            uninjured
-            & (adata.obs["celltype"].astype(str) == celltype)
-        )
-
-        adata.obs.loc[mask, "_cnv_reference_group"] = group_name
-
-        reference_categories.append(group_name)
+    # Group all Uninjured cells into one single category
+    adata.obs.loc[uninjured, "_cnv_reference_group"] = "Reference"
+    
+    reference_categories = ["Reference"]
 
     print("Reference populations:")
-
-    reference_counts = (
-        adata.obs.loc[uninjured, "_cnv_reference_group"]
-        .value_counts()
-        .sort_index()
-    )
-
-    for group, count in reference_counts.items():
-        print(f"  {group}: {count:,}")
-
+    print(f"  Reference: {int(uninjured.sum()):,} cells")
     print(f"Total reference cells: {int(uninjured.sum()):,}")
-
-    if len(reference_categories) == 0:
-        raise ValueError("No reference populations were generated.")
 
     return adata, reference_categories
 
@@ -468,16 +495,19 @@ def main():
             "Gene names are not unique. Resolve duplicate gene symbols first."
         )
 
-    # Gene symbols must be matched to genomic coordinates.
+    # 1. Filter by marker FIRST (before dropping unmapped genes like EGFP)
+    adata = filter_by_marker(adata, marker=args.marker, cutoff=args.cutoff)
+
+    # 2. Gene symbols must be matched to genomic coordinates.
     adata = annotate_genes(adata, args.prefix)
 
-    # Prepare Uninjured reference populations.
+    # 3. Prepare Uninjured reference populations.
     adata, reference_categories = prepare_reference(adata)
 
-    # Run infercnvpy.
+    # 4. Run infercnvpy.
     adata = run_infercnv(adata, reference_categories)
 
-    # Save outputs.
+    # 5. Save outputs.
     save_outputs(adata, args.prefix)
 
     print("\nCNV analysis completed.")

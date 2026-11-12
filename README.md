@@ -801,6 +801,6 @@ Global UMAP embedding and Palantir trajectory analysis of the complete dataset s
 
 **Reference selection for inferCNV:** All cell types from the Uninjured samples were initially used as the reference population. A reference is needed to establish baseline gene expression levels, allowing inferCNV to identify coordinated increases or decreases across neighbouring genes that may indicate chromosomal gains or losses. Since Uninjured samples represent the baseline condition and do not contain Osteosarcoma cells, they provide a starting point for estimating normal chromosomal expression patterns. Cell types from the other conditions (Reg, non-Reg, Reg 14 DPA, non-Reg 14 DPA, etc.) were then compared against this reference to identify expression patterns potentially indicative of CNVs.
 
-![](figures/allAXT_CNV_Heatmap.png?v=1)
-![](figures/allAXT_CNV_Score_Violin.png?v=1)
+![](figures/allAXT_CNV_Heatmap.png?v=3)
+![](figures/allAXT_CNV_Score_Violin.png?v=3)
 
