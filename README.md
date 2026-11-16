@@ -794,13 +794,16 @@ Global UMAP embedding and Palantir trajectory analysis of the complete dataset s
 
 **Copy Number Variation (CNV)** is a gain or loss of a DNA segment compared with the normal copy number (usually two copies in diploid cells).
 
-**How we detect CNVs from scRNA-seq:** Since scRNA-seq measures gene expression rather than DNA directly, tools such as inferCNV look for coordinated increases or decreases in the expression of multiple neighbouring genes along the same chromosome, relative to reference cells. These patterns may indicate DNA amplification or deletion.
+**How we detect CNVs from scRNA-seq:** Since scRNA-seq measures gene expression rather than DNA directly, tools such as *infercnvpy* look for coordinated increases or decreases in the expression of neighbouring genes along the same chromosome, relative to reference cells. These patterns may indicate DNA amplification or deletion.
 
-**Why is it an inference?** Because increased expression does not necessarily mean extra DNA copies; neighbor genes can also be transcriptionally upregulated without any change in DNA copy number. Therefore, scRNA-seq identifies *candidate CNV regions*, which require DNA-based methods for confirmation.
+**Why is it an inference?** Increased or decreased gene expression does not necessarily mean a change in DNA copy number. Neighbouring genes can also be transcriptionally upregulated or downregulated without any change in DNA. Therefore, scRNA-seq identifies *candidate CNV regions*, which require DNA-based methods for confirmation.
 
-
-**Reference selection for inferCNV:** All cell types from the Uninjured samples were initially used as the reference population. A reference is needed to establish baseline gene expression levels, allowing inferCNV to identify coordinated increases or decreases across neighbouring genes that may indicate chromosomal gains or losses. Since Uninjured samples represent the baseline condition and do not contain Osteosarcoma cells, they provide a starting point for estimating normal chromosomal expression patterns. Cell types from the other conditions (Reg, non-Reg, Reg 14 DPA, non-Reg 14 DPA, etc.) were then compared against this reference to identify expression patterns potentially indicative of CNVs.
+**Reference selection:** All cell types from the Uninjured samples were combined into a single reference population. These cells provide a baseline for estimating normal chromosomal expression patterns. Cells from the other conditions (Reg, non-Reg, Reg 14 DPA, non-Reg 14 DPA, etc.) were compared against this reference to identify coordinated expression patterns potentially indicative of chromosomal gains or losses.
 
 ![](figures/allAXT_CNV_Heatmap.png?v=3)
 ![](figures/allAXT_CNV_Score_Violin.png?v=3)
 
+**Marker-based cell selection (EGFP):** In this analysis, we focused on EGFP-positive cells. All cells from the Uninjured reference samples were retained, while cells from the other conditions were filtered to include only EGFP-positive cells. This allowed us to focus the CNV analysis on the EGFP-labelled cell population while maintaining the Uninjured cells as the reference.
+
+![](figures/AXT_EGFP_CNV_Heatmap.png?v=1)
+![](figures/AXT_EGFP_CNV_Score_Violin.png?v=1)
