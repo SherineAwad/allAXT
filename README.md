@@ -805,5 +805,5 @@ Global UMAP embedding and Palantir trajectory analysis of the complete dataset s
 
 **Marker-based cell selection (EGFP):** In this analysis, we focused on EGFP-positive cells. All cells from the Uninjured reference samples were retained, while cells from the other conditions were filtered to include only EGFP-positive cells. This allowed us to focus the CNV analysis on the EGFP-labelled cell population while maintaining the Uninjured cells as the reference.
 
-![](figures/AXT_EGFP_CNV_Heatmap.png?v=1)
-![](figures/AXT_EGFP_CNV_Score_Violin.png?v=1)
+![](figures/AXT_EGFP_CNV_Heatmap.png?v=2)
+![](figures/AXT_EGFP_CNV_Score_Violin.png?v=2)
