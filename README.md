@@ -807,3 +807,31 @@ Global UMAP embedding and Palantir trajectory analysis of the complete dataset s
 
 ![](figures/AXT_EGFP_CNV_Heatmap.png?v=2)
 ![](figures/AXT_EGFP_CNV_Score_Violin.png?v=2)
+
+### Isolation Forest Analysis for Osteosarcoma Differentiation
+
+This analysis uses Isolation Forests from machine learning. The basic idea is that we treat Osteosarcoma in the nonReg condition as our reference transcriptional population. We then compare every cell type in every condition against this reference, using the variable genes identified within the reference population.
+
+A high score represents greater conformity to the reference transcriptional distribution, suggesting that the cell exhibits a more Osteosarcoma-like transcriptional profile. A low score indicates a more atypical transcriptional profile relative to the reference.
+
+How does this help investigate potential differentiation-related changes? If a cell population shows a low score (less reference-like) at time *i*, and later shows a higher score (more reference-like) at time *i+1*, this suggests that its transcriptional profile is progressively converging towards the Osteosarcoma reference programme. This may indicate the acquisition of shared transcriptional characteristics during injury or regeneration. However, it does not establish that Osteosarcoma cells are differentiating into that population, or that the population is undergoing a change in cell identity. Instead, it identifies a temporal shift in transcriptional-state conformity that may help generate hypotheses about potential relationships between cell populations.
+
+![](figures/allAXT_osteosarcoma_lineage_condition_subplots.png?v=1)
+
+> Macrophage/Osteoclast: This population shows the clearest gradual shift toward the reference distribution across conditions. In the Uninjured state, its median reference-likeness sits low (~0.18), indicating that its transcriptional profile is relatively atypical with respect to the nonReg Osteosarcoma reference. Across the injury and regenerative states, the median steadily climbs—from ~0.20 in nonReg and ~0.23 in Reg_4wpa to a peak of ~0.27 in Non_Regen_14_DPA. This suggests that its transcriptional profile progressively converges towards aspects of the reference distribution.
+
+> These shifts indicate changes in how closely a cell's expression profile conforms to the transcriptional distribution defined by the tumour's variable genes. They do not mean that cells are becoming tumour cells. Rather, they indicate increasing convergence towards aspects of the tumour-reference transcriptional programme, without necessarily implying a change in cell identity.
+
+
+### Should We Reverse the Reference?
+
+Our current analysis asks:
+
+> How much do other cell types resemble the Osteosarcoma transcriptional programme over time?
+
+However, to investigate whether Osteosarcoma cells acquire transcriptional characteristics of other cell populations, we need to reverse the reference:
+
+> How much do Osteosarcoma cells resemble the transcriptional programme of each candidate cell type over time?
+
+This reciprocal analysis would allow us to investigate transcriptional convergence from both directions and identify candidate cell populations whose transcriptional programmes Osteosarcoma cells increasingly resemble over time.
+
