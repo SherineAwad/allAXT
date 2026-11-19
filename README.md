@@ -835,3 +835,9 @@ However, to investigate whether Osteosarcoma cells acquire transcriptional chara
 
 This reciprocal analysis would allow us to investigate transcriptional convergence from both directions and identify candidate cell populations whose transcriptional programmes Osteosarcoma cells increasingly resemble over time.
 
+
+- Here, we flipped the reference to Mesenchymal cells in the nonReg condition to ask which cell types—particularly Osteosarcoma—show greater overlap with this Mesenchymal transcriptional distribution across conditions. Osteosarcoma's reference-likeness increases from the uninjured state toward later conditions rather than remaining flat. Because this shift is progressive across the time course, we interpret it as a potential sign of Osteosarcoma differentiating toward a Mesenchymal-like state. However, we note that this measures transcriptional feature-space overlap, which supports but does not definitively confirm lineage differentiation.
+
+![](figures/Mesen_Isolation_osteosarcoma_lineage_condition_subplots.png?v=1)
+
+
