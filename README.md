@@ -816,6 +816,8 @@ A high score represents greater conformity to the reference transcriptional dist
 
 How does this help investigate potential differentiation-related changes? If a cell population shows a low score (less reference-like) at time *i*, and later shows a higher score (more reference-like) at time *i+1*, this suggests that its transcriptional profile is progressively converging towards the Osteosarcoma reference programme. This may indicate the acquisition of shared transcriptional characteristics during injury or regeneration. However, it does not establish that Osteosarcoma cells are differentiating into that population, or that the population is undergoing a change in cell identity. Instead, it identifies a temporal shift in transcriptional-state conformity that may help generate hypotheses about potential relationships between cell populations.
 
+#### Osteosarcoma non Reg as a reference 
+
 ![](figures/allAXT_osteosarcoma_lineage_condition_subplots.png?v=1)
 
 > Macrophage/Osteoclast: This population shows the clearest gradual shift toward the reference distribution across conditions. In the Uninjured state, its median reference-likeness sits low (~0.18), indicating that its transcriptional profile is relatively atypical with respect to the nonReg Osteosarcoma reference. Across the injury and regenerative states, the median steadily climbs—from ~0.20 in nonReg and ~0.23 in Reg_4wpa to a peak of ~0.27 in Non_Regen_14_DPA. This suggests that its transcriptional profile progressively converges towards aspects of the reference distribution.
@@ -835,7 +837,7 @@ However, to investigate whether Osteosarcoma cells acquire transcriptional chara
 
 This reciprocal analysis would allow us to investigate transcriptional convergence from both directions and identify candidate cell populations whose transcriptional programmes Osteosarcoma cells increasingly resemble over time.
 
-
+#### Mesenchymal nonReg as a reference 
 - Here, we flipped the reference to Mesenchymal cells in the nonReg condition to ask which cell types—particularly Osteosarcoma—show greater overlap with this Mesenchymal transcriptional distribution across conditions. Osteosarcoma's reference-likeness increases from the uninjured state toward later conditions rather than remaining flat. Because this shift is progressive across the time course, we interpret it as a potential sign of Osteosarcoma differentiating toward a Mesenchymal-like state. However, we note that this measures transcriptional feature-space overlap, which supports but does not definitively confirm lineage differentiation.
 
 ![](figures/Mesen_Isolation_osteosarcoma_lineage_condition_subplots.png?v=1)
