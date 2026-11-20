@@ -841,3 +841,11 @@ This reciprocal analysis would allow us to investigate transcriptional convergen
 ![](figures/Mesen_Isolation_osteosarcoma_lineage_condition_subplots.png?v=1)
 
 
+#### Mesenchymal uninjured as a reference 
+
+![](figures/Mesen_Uninjured_Isolation_osteosarcoma_lineage_condition_subplots.png?v=1)
+
+#### Mesenchymal Non_Regen_14_DPA as a reference 
+
+![](figures/Mesen_Non_Regen_14_DPA_Isolation_osteosarcoma_lineage_condition_subplots.png?v=1)
+
